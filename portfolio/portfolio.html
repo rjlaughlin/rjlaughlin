@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Riley Laughlin | My Portfolio</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+  
+<!-- Banner -->
+<div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
+  <div style="font-size: 20px; font-weight: bold;">R. Laughlin</div>
+  <div>
+    <a href="index.html" class="nav-link">ABOUT</a>
+    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+    <a href="#contact" class="nav-link">CONTACT</a>
+  </div>
+</div>
+
+<!-- Phoenix Skyline Banner -->
+<div style="position: relative; width: 100%; height: 300px; background: url('https://t4.ftcdn.net/jpg/00/94/75/29/360_F_94752988_MYOfnIZ0Ir13eLZsGRKe4enmf14MVFli.jpg') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
+  <h1 style="color: white; font-size: 36px; font-weight: bold; background: rgba(0, 0, 0, 0.5); padding: 10px 20px;">Welcome to My Portfolio</h1>
+</div>
+  
+  <section style = "background-color: black;" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-subheading text-muted" style = "color: white !important;margin-top: 15px">Here are some of my projects</h3>
+          <div id="portfolio-button-container">
+            <button class="btn btn-secondary active" data-portfolio-section="all">Show all</button>
+            <button class="btn btn-secondary" data-portfolio-section="data">Data</button>
+            <button class="btn btn-secondary" data-portfolio-section="viz">Visualization</button>
+            <button class="btn btn-secondary" data-portfolio-section="dashboard">Dashboard</button>
+            <button class="btn btn-secondary" data-portfolio-section="product">Product Design</button>
+            <button class="btn btn-secondary" data-portfolio-section="improvement">Process Improvement</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div id="portfolio-items" class="row">
+
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column data viz dashboard">
+          <a class="portfolio-link" data-toggle="modal" href="#bitcoin"  style = "background-color: #000000">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Bitcoin</p>
+                <hr>
+                <p class="explanation_portfolio">Assessing Bitcoin's historical price movement and volatility<br></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/filled_bitcoin.gif" style = "object-fit: contain;" alt="">
+          </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column viz product">
+          <a class="portfolio-link" data-toggle="modal" href="#TA5" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>TA5 OPRTR</p>
+                <hr>
+                <p class="explanation_portfolio">Ruggedized tablet case for military operators. Designed for
+                  <i>Juggernaut.Case</i></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/Picture1.png" style = "object-fit: contain;" alt="">
+          </a>
+        </div>
+
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column data viz product">
+          <a class="portfolio-link" data-toggle="modal" href="#JG_Cases" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Juggernaut.Case Projects</p>
+                <hr>
+                <p class="explanation_portfolio">Showcasing the products I designed and launched at Juggernaut</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/JG_Cases.png" style = "object-fit: contain;" alt="">
+          </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column improvement">
+          <a class="portfolio-link" data-toggle="modal" href="#ECN" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>ECN-Fishbowl Part Number Import</p>
+                <hr>
+                <p class="explanation_portfolio">Automation project enhancing data entry efficiency and error reduction.
+                <br><br></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/GS_FB_Logos.png" style = "object-fit: contain; transform: scale(0.975);" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column data viz improvement">
+          <a class="portfolio-link" data-toggle="modal" href="#hubbellQMS" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Quality Management System</p>
+                <hr>
+                <p class="explanation_portfolio">Analyzed and optimized quality management processes to enhance compliance and efficiency.
+                  <br></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/RTB_Graph.jpg" style = "object-fit: contain;" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column data viz dashboard">
+          <a class="portfolio-link" data-toggle="modal" href="#bike" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Citi Bike Analysis</p>
+                <hr>
+                <p class="explanation_portfolio">Ride data analysis uncovering usage patterns and peak times</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/citibike_4.png" alt="">
+          </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column viz">
+          <a class="portfolio-link" data-toggle="modal" href="#earthquakes">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Earthquake Data Visualization</p>
+                <hr>
+                <p class="explanation_portfolio">An interactive visualization that maps earthquake occurrences worldwide.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/earthquakes.png"  alt="data to viz logo">
+          </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column data viz">
+          <a class="portfolio-link" data-toggle="modal" href="#storms" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Natural Disasters Data Analysis</p>
+                <hr>
+                <p class="explanation_portfolio">Analysis on the frequency and financial impact of natural disasters</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/hurricane.png" alt="">
+          </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column data viz">
+          <a class="portfolio-link" data-toggle="modal" href="#concussions" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>The Comprehensive Analysis of Concussions</p>
+                <hr>
+                <p class="explanation_portfolio">Thesis on the impact of concussions in professional football.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="https://meridianstar.com/wp-content/uploads/sites/12/2024/12/cdeea2f3d57e37985970021a529f0b0f.jpg?w=1024" alt="">
+          </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column data viz dashboard">
+          <a class="portfolio-link" data-toggle="modal" href="#bellyButton" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Belly Button Biodiversity Dashboard</p>
+                <hr>
+                <p class="explanation_portfolio">Interactive dashboard cataloging microbial species found in human navels.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/bubble.png" alt="" align="middle">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column product">
+          <a class="portfolio-link" data-toggle="modal" href="#Other_Design_Projects" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Other Design Projects</p>
+                <hr>
+                <p class="explanation_portfolio">Showcases other mechanical design projects from my career.</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/designs.png" style = "object-fit: contain;" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column improvement">
+          <a class="portfolio-link" data-toggle="modal" href="#macros" style="background-color: white;">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Juggernaut Macros</p>
+                <hr>
+                <p class="explanation_portfolio">Automating key engineering processes</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/JG_Macros.png" style = "object-fit: contain; transform: scale(0.70);" alt="">
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+<!---------------------------- MODAL SECTION --------------------------------------------->
+<!------------------------- BITCOIN ANALYSIS ---------------------------------------1--->
+<center>
+  <div class="portfolio-modal modal fade" id="bitcoin" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;"">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Extract, Transform, Load (ETL) | Python | JavaScript & HTML</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>Bitcoin - An Analysis of the First Cryptocurrency</h4>
+                <p style="max-width: 100%; margin-bottom:15px;">In my data analytics bootcamp, I was part of a project that analyzed Bitcoin's historical price movements to provide insights into market trends and volatility. Through visualizations, it aims to help readers understand Bitcoin's price behavior over time.</p>
+                <p style = "margin-top:0; margin-bottom:15px;">To achieve this, we used several technologies, including:</p>
+                <ul style = "margin-top:0; margin-bottom:15px;">
+                  <li>Python, Jupyter Notebook, and Pandas for data acquisition and manipulation.</li>
+                  <li>JavaScript, HTML, CSS, and D3 for interactive visualizations.</li>
+                  <li>Plotly and Matplotlib for advanced charting techniques.</li>
+                  <li style = "margin-top:0; margin-bottom:15px;">Splinter and PIL for web scraping and image processing.</li>
+                </ul>
+                <p style = "margin-top:0; margin-bottom:15px;">Data sources include CoinMarketCap for historical Bitcoin prices and Fidelity for ETF data.</p>
+                <p style = "margin-top:0; margin-bottom:15px;">The dashboard features several key visualizations:</p>
+                <ul style = "margin-top:0; margin-bottom:15px;">
+                  <li><strong>Bitcoin Price Over Time:</strong> Tracks Bitcoin’s price with adjustable time units (days, months, or years).</li>
+                  <li><strong>Dollar Change vs. Percentage Change Heatmap:</strong> Displays Bitcoin’s volatility based on different timeframes.</li>
+                  <li style = "margin-top:0; margin-bottom:15px;"><strong>Google Trends Bitcoin Search Interest:</strong> Visualizes Bitcoin-related search activity across U.S. states.</li>
+                </ul>
+                <p style = "margin-top:0; margin-bottom:20px;";>The first two charts are controlled by two sets of buttons, allowing over 14 visualization combinations based on selections.</p>
+                <div style="display: flex; justify-content: space-between; gap: 20px;">
+                  <div style="position: relative;">
+                    <img src="img/filled_bitcoin.gif" style = "background-color:black" width="300px">
+                    <p style="background-color:gray;padding:5px;color:white;">I generated a GIF using Python that fills the Bitcoin logo.</p>
+                  </div>
+                  <img src="img/bitcoin_dashboard.png" width="500px">
+                </div>
+                <div style="text-align: center; margin-top: 10px;">
+                  <img src="img/bitcoin_volatility.png" width="100%">
+                </div>
+                <p style="background-color:gray;padding:5px;color:white;margin-top: 5px;" width="700px">Chart plotting Bitcoin and Bitcoin ETF price changes</p>
+                <hr>
+                <span>The source code of the project is available on <a href="https://github.com/Cmagor1819/team-7-project3">GitHub</a>.</span>
+                <div style="margin-top: 5px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://cmagor1819.github.io/team-7-project3/">Dashboard</a>
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/Cmagor1819/team-7-project3">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div></center>
+
+<!-- ----------------------- TA5 ---------------------------------------- 2 -->
+<center>
+  <div class="portfolio-modal modal fade" id="TA5" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/juggernaut-case-logo.jpg" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right; white-space: nowrap;">
+                    <strong>Key Skills: Project Requirements | Project Management | Stakeholder Collaboration</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>OPRTR TA5 - Rugged Case Development</h4>
+                <p style="max-width: 100%; margin-bottom:15px;">I led the design, build, and launch of the OPRTR case for the Samsung Galaxy Tab Active 5. This case is designed for operators requiring a rugged and adaptable mounting solution in various environments, including vehicle dashboards, chest molle mounts, and kneeboard mounts.</p>
+                <p style="margin-top:0; margin-bottom:15px;">Key highlights of the project include:</p>
+                <ul style="margin-top:0; margin-bottom:15px;">
+                  <li>Understanding and defining product requirements based on end-user needs.</li>
+                  <li>Managing the project lifecycle from concept to launch, ensuring timely delivery.</li>
+                  <li>Collaborating with stakeholders, including manufacturers, to refine design specifications.</li>
+                  <li>Ensuring the case met durability and usability standards for field operations.</li>
+                </ul>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: center;">
+                  <img src="img/Picture1.png" width="100%">
+                  
+                  <!-- Wrap bar chart and text in a container -->
+                  <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/bar.png" width="100%" style = "margin-bottom: 0px;">
+                    <p style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">This chart shows the financial performance of my projects at Juggernaut.Case. The TA5 OPRTR was the highest-earning SKU among my project SKUs during my tenure, showcasing its market impact.</p>
+                  </div>
+                
+                  <img src="img/percent_contribution.png" width="100%">
+                  <img src="img/JG.OPRTR.TA5_2.png" width="100%">
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div></center>
+
+
+<!------------------------- JG Cases -----------------------------------3------->
+<center>
+  <div class="portfolio-modal modal fade" id="JG_Cases" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/juggernaut-case-logo.jpg" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right; white-space: nowrap;">
+                    <strong>Key Skills: Project Requirements | Project Management | Stakeholder Collaboration</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>Juggernaut.Case Projects</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  Juggernaut.Case designed ruggedized cases, mounts, and cables for military operators. During my time at Juggernaut, I was in charge of the design and launch of 10+ SKUs. Many of the skills I developed in design engineering translate seamlessly to data analysis and business intelligence, including proficiency in various technological tools, strong project management capabilities, and effective collaboration within cross-functional teams.
+                </p>
+            
+                <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: -5px;">
+                  <div style="display: flex; gap: 20px;">
+                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                      <span>10+</span>
+                      <div style="font-size: 24px; margin-top: 5px;">SKUs</div>
+                    </div>
+                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                      <span>$2M</span>
+                      <div style="font-size: 24px; margin-top: 5px;">Revenue</div>
+                    </div>
+                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                      <span>7</span>
+                      <div style="font-size: 24px; margin-top: 5px;">Programs</div>
+                    </div>
+                  </div>
+                  <img src="img/pie2.png" width="35%" height="35%%" style="border-radius: 10px;">
+                </div>
+            
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: center; margin-top: 40px;">
+                  <img src="img/ENDVR_i14_Pro_Hero_SG.png" width="100%">
+                  <img src="img/JG.ADVNTR.GLXY.S23_1-BLK.png" width="100%">
+                  <img src="img/JG.ADVNTR.GLXY.S23U_1-FDE.png" width="100%">
+                  <img src="img/S20-OPRTR.png" width="100%">
+                  <img src="img/JG.OPRTR.S22U.png" width="100%">
+                  <img src="img/JG.ADVNTR.GLXY.S24_1-FDE.jpg" width="100%">
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></center>
+
+<!------------------------- ECN-Fishbowl Part Number Import --------------------------------------4---->
+
+<center>
+  <div class="portfolio-modal modal fade" id="ECN" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/juggernaut-case-logo.jpg" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Process Improvement | SQL Querying | Visual Basic for Applications</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>ECN-Fishbowl Part Number Import</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  Upon joining Juggernaut, I found that the company lacked sophistication in product data and lifecycle management. Processes were often dependent on Google Sheets, leading to inefficiencies. As part of our ECN process, data was entered in multiple locations manually. To streamline this workflow, I developed a VBA-based script that extracted data from an ECN spreadsheet and converted it into an importable CSV file for Fishbowl Inventory Management. This significantly reduced data entry time and improved process efficiency.
+                </p>
+                <p style="font-size: 17px; color: #231f20; text-align: center; max-width: 800px; margin: 10px;">
+                  The automated process provided several key benefits:
+                </p>
+                <ul style="font-size: 17px; color: #231f20; text-align: center; max-width: 800px; margin: 0 auto; display: block;">
+                  <li>Automated data entry into Fishbowl, reducing manual input errors.</li>
+                  <li>Automated file transfer to the designated Release directory, ensuring consistency.</li>
+                  <li>Expedited ECN auditing by fellow engineers, improving review and approval efficiency.</li>
+                </ul>
+  
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: center; margin-top: 40px;">
+                  <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/Picture5.png" width="100%" style = "margin-bottom: 0px;">
+                    <p style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">Custom userform to select a specific ECN.
+                    </p>
+                  </div>
+                  <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/Picture6.png" width="100%" style = "margin-bottom: 0px;">
+                    <p style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">SQL code to query the Fishbowl management 
+                      system on existing part numbers.</p>
+                  </div>
+                </div>
+                <hr>
+                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>.</span>
+                <div style="margin-top: 5px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+
+<!------------------------- Hubbell Quality Management System --------------------------------------5---->
+<center>
+  <div class="portfolio-modal modal fade" id="hubbellQMS" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/hubbell-logo.png" height="125px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Summary Statistics | System Development | Process Automation</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>Hubbell Quality Management System</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  The Quality Tracking Spreadsheet utilizes the 8D (Eight Disciplines) Methodology for structured problem-solving and quality improvement. This system tracks, analyzes, and resolves issues to enhance product quality and prevent recurrence.
+                </p>
+                
+                <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 5px;">
+                  <div style="display: flex; gap: 20px;">
+                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                      <span>31</span>
+                      <div style="font-size: 24px; margin-top: 5px;">Issues Resolved</div>
+                    </div>
+                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                      <span>82%</span>
+                      <div style="font-size: 24px; margin-top: 5px;">Complete</div>
+                    </div>
+                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                      <span>62</span>
+                      <div style="font-size: 24px; margin-top: 5px;">Days Avg</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; margin-top: 10px;">
+                  <!-- Left Side (Two Stacked Images) -->
+                  <div style="display: flex; flex-direction: column; gap: 0px;">
+                      <div style="text-align: center;">
+                          <img src="img/QMS_1.png" style="width: 100%; border: 1px solid black; margin:0px;padding:0px">
+                          <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                              <p>Initial view of the quality log</p>
+                          </div>
+                      </div>
+              
+                      <div style="text-align: center;">
+                          <img src="img/QMS_2.jpg" style="width: 100%; border: 1px solid black;margin:0px;padding:0px">
+                          <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                              <p>Chart detailing open vs. closed issues</p>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <!-- Right Side (One Large Image) -->
+                  <div style="text-align: center;">
+                      <img src="img/QMS_3.png" style="width: 100%; height: 100%; object-fit: cover; border: 1px solid black;margin:0px;padding:0px">
+                      <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                          <p>Final 8D Form</p>
+                      </div>
+                  </div>
+              </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                  <img src="img/QMS_4.gif" width="100%" >
+                </div>
+                <hr>
+                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/Quality-Management">GitHub</a>.</span>
+                <div style="margin-top: 5px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/Quality-Management">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+<!------------------------- Citi Bike Analysis --------------------------------------6---->
+<center>
+  <div class="portfolio-modal modal fade" id="bike" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Data Visualization | Tableau | Geospatial Analysis</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>Citi Bike Ride Analysis (Nov 2024 - Jan 2025)</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  This bootcamp project analyzes New York's Citi Bike program data over a three-month period, uncovering key insights into ride distribution, peak usage, and station popularity. Using Tableau, interactive visualizations highlight rider behavior and trends to inform city officials on optimizing the bike-sharing system.
+                </p>
+                <div style="text-align: center; margin-top: 10px;">
+                  <img src="img/citibike_1.png" width="100%">
+                </div>
+                <div style="text-align: center; margin-top: 5px;">
+                  <img src="img/citibike_2.png" width="100%">
+                </div>
+                <div style="text-align: center; margin-top: 5px;">
+                  <img src="img/citibike_3.png" width="100%">
+                </div>
+                <p style="background-color:gray;padding:5px;color:white;margin-top: 5px; text-align: center;">Screenshot of Citi Bike analysis story</p>
+                <hr>
+                <h5 style = "margin-top:10px;text-decoration: underline;">Key Findings</h5>
+                <ul style="text-align: left; max-width: 800px; margin-top: 5px; margin: auto;">
+                  <li><strong>Ride Distribution:</strong> Most trips began and ended in Manhattan, with end locations more dispersed, indicating diverse rider destinations.</li>
+                  <li><strong>Peak Hours:</strong> 5 PM saw the highest ride volume, followed by 6 PM and 4 PM, suggesting post-work commute trends.</li>
+                  <li><strong>High-Ridership Days:</strong> November 1st and December 17th recorded the most rides.</li>
+                  <li><strong>Popular Stations:</strong> Central Park was a top round-trip destination, while W 21st St & 6th Ave had the highest ride completions.</li>
+                </ul>
+                <hr>
+                <span style = "margin-top: 5px;">The source data is publicly available on the <a href="https://www.citibikenyc.com/system-data">Citi Bike Data Portal</a>.</span>
+                <div style="margin-top: 2px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://public.tableau.com/profile/rjlaughlin">Tableau Story</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+
+<!------------------------- Earthquakes --------------------------------------7---->
+<center>
+  <div class="portfolio-modal modal fade" id="earthquakes" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Geospatial Data Visualization | JavaScript & Leaflet.js | API Data Retrieval</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>Earthquake Data Visualization</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  This bootcamp project was developed to provide an interactive visualization of earthquake data collected by the United States Geological Survey (USGS). Using Leaflet.js, earthquake events are mapped based on real-time data, with visual indicators such as marker size and color representing earthquake magnitude and depth.
+                </p>
+                <div style="text-align: center; margin-top: 20px;">
+                  <img src="img/earthquake_map.png" width="100%" style = "margin:0px;padding:0px">
+                </div>
+                <p style="background-color:gray;padding:5px;color:white;margin-top: 2px; padding:0px; text-align: center;">Screenshot of the interactive earthquake map</p>
+                <hr>
+                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/leaflet-challenge">GitHub</a>.</span>
+                <div style="margin-top: 10px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://rjlaughlin.github.io/leaflet-challenge/">Live Visualization</a>
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/leaflet-challenge">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+
+<!------------------------- Natural Disasters --------------------------------------8---->
+<center>
+  <div class="portfolio-modal modal fade" id="storms" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Python | Data Visualization | Geospatial Analysis</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>Natural Disasters Data Analysis</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  This bootcamp project analyzes natural disasters datasets, providing insights into the locations, frequency, and costs of such events. The analysis explores whether the frequency of natural disasters has increased over time using data visualization techniques.
+                </p>
+                <section id="key-questions" style = "margin-bottom: 20px;">
+                  <h5 style="margin-top:20px">Key Questions</h5>
+                  <ul style = "text-align: center;margin:0px">
+                      <li>Do natural disasters increase over time?</li>
+                      <li>Is there a relationship between disaster duration and economic impact?</li>
+                      <li>Which areas are most affected by natural disasters?</li>
+                      <li>What are the financial and human impacts of major disasters?</li>
+                  </ul>
+              </section>
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; align-items: center;">
+                <img src="img/storms.png" width="100%" style = "margin-bottom: 0px;">
+                <img src="img/storms2.png" width="100%" style = "margin-bottom: 0px;">
+                <img src="img/storms3.png" width="100%" style = "margin-bottom: 0px;">
+                <img src="img/storms4.png" width="100%" style = "margin-bottom: 0px;">
+              </div>
+
+              <section id="key-findings">
+                <h5 style="margin-top:0px">Key Findings</h5>
+                    <p style = "margin:0px"><strong>Rising Disaster Counts</strong>: The frequency of natural disasters, especially floods and storms, has increased over time.</p>
+                    <p style = "margin:0px"><strong>High-Impact Regions</strong>: Brady, Texas, experienced the highest frequency of disasters from 1960–2018.</p>
+                    <p style = "margin:0px"><strong>Cost vs. Duration</strong>: There is no significant correlation between disaster duration and economic impact.</p>
+                    <p style = "margin:0px"><strong>Major Events</strong>: Hurricane Katrina incurred the highest economic cost ($200 billion), while Hurricane Maria had the highest death toll (2,981).</p>
+              </section>
+              <hr>
+              <span style = "margin-top: 5px;">The source code of the project is available on <a href="https://github.com/andrewplane/project_one">GitHub</a>.</span>
+                <div style="margin-top: 2px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/andrewplane/project_one">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+<!------------------------- NFL Concussions --------------------------------------9---->
+<center>
+  <div class="portfolio-modal modal fade" id="concussions" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Research | Statistical Analysis | Data Visualization & Presentation</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>The Comprehensive Analysis of Concussions</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  This research paper analyzes the impact of concussions in the NFL, the evolution of rules aimed at player safety, and the broader societal consequences of traumatic brain injuries. Despite advancements in equipment and rule changes, concussions remain a prevalent issue in professional football.
+                </p>
+                <section id="key-questions" style = "margin-bottom: 20px;">
+                  <h5 style="margin-top:20px">Key Questions</h5>
+                  <ul style = "text-align: center;margin:0px">
+                    <li>How do concussions affect NFL players in the short and long term?</li>
+                    <li>What rule changes have been implemented to mitigate head injuries?</li>
+                    <li>How effective are modern helmets in reducing concussion risks?</li>
+                    <li>What are the societal and psychological consequences of repeated head trauma?</li>
+                  </ul>
+              </section>
+              
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; align-items: center; margin-top:40px;">
+
+                <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                  <img src="img/NFL_1.png" style="width: 100%; height: 250px; object-fit: contain;">
+                  <div style="background-color: gray; color: white; width: 90%; padding: 0px;">
+                      <p style = "margin-bottom: 0px; padding-bottom: 0px;">Data for the number of concussions in the NFL was limited when I wrote this thesis.</p>
+                  </div>
+                </div>
+          
+                <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                  <img src="img/NFL_2.png" style="width: 100%; height: 250px; object-fit: contain;">
+                  <div style="background-color: gray; color: white; width: 90%; padding: 0px;">
+                      <p style = "margin-bottom: 0px; padding-bottom: 0px;">Updated chart to reflect latest concussion data.</p>
+                  </div>
+                </div>
+
+                <div style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-top: 10px">
+                  <img src="img/NFL_3.png" style="width: 100%; height: 250px; object-fit: contain;">
+                  <div style="background-color: gray; color: white; width: 90%; padding: 0px;">
+                    <p style = "margin-bottom: 0px; padding-bottom: 0px;">Deterioration of brain cells due to concussions</p>
+                  </div>
+                </div>
+
+                <div style="text-align: center; display: flex; flex-direction: column; align-items: center;margin-top: 10px">
+                  <img src="img/NFL_4.png" style="width: 100%; height: 250px; object-fit: contain;">
+                  <div style="background-color: gray; color: white; width: 90%; padding: 0px;">
+                    <p style = "margin-bottom: 0px; padding-bottom: 0px;">History of football helmets, including the Guardian Cap. The NFL first mandated the use of Guardian Caps during the early portion of training camp in 2022. The NFL began allowing Guardian Caps in games during the 2024 season. The Guardian Cap is a soft-shell pad that attaches to the outside of a football helmet to reduce the impact of blows to the head.</p>
+                  </div>
+                  </div>
+              </div>
+              <section id="key-findings">
+                <h5 style="margin-top:40px">Key Findings</h5>
+                    <div style = "margin:0px; white-space:nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150%;font-size: smaller; display: block; justify-content: center; align-items: center;">
+                      <p style = "margin:0px;"><strong>High Impact Speeds</strong>: Concussed players experience head impacts at an average of 20.8 mph, with head acceleration forces reaching 98 g’s.</p>
+                      <p style = "margin:0px;"><strong>Frequent Head Collisions</strong>: Approximately 60% of NFL collisions are head-to-head, contributing to high concussion rates.</p>
+                      <p style = "margin:0px;"><strong>Helmet Effectiveness</strong>: Virginia Tech research suggests modern helmets reduce concussion risks by 45-96%, though concussions remain common.</p>
+                      <p style = "margin:0px;"><strong>Player Health Concerns</strong>: Over the past decade, multiple former NFL players with a history of concussions have committed suicide, highlighting mental health risks.</p>
+                    </div>
+              </section>
+              <hr>
+              <h5>Resources</h5>
+                <div style="margin-top: 2px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://keep.lib.asu.edu/items/136446">Full Paper</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+
+<!------------------------- Belly Button Dashboard --------------------------------------10---->
+<center>
+  <div class="portfolio-modal modal fade" id="bellyButton" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Data Visualization | D3.js & Plotly.js | Interactive Dashboards</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>Belly Button Biodiversity Dashboard</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  This bootcamp project is an interactive dashboard that explores the Belly Button Biodiversity dataset, cataloging microbial species found in human navels. Using D3.js and Plotly.js, the dashboard provides insights into microbial diversity, showing the most prevalent and rare species across individuals.
+                </p>
+                <div style="text-align: center; margin-top: 20px;">
+                  <img src="img/bb_dash.gif" width="100%">
+                </div>
+                <p style="background-color:gray;padding:5px;color:white;margin-top: 5px; text-align: center;">Screenshot of the interactive biodiversity dashboard</p>
+                <hr>
+                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/belly-button-challenge">GitHub</a>.</span>
+                <div style="margin-top: 10px; padding: 5px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://rjlaughlin.github.io/belly-button-challenge/">Dashboard</a>
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/belly-button-challenge">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+<!------------------------- Macros --------------------------------------12---->
+<center>
+  <div class="portfolio-modal modal fade" id="macros" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
+                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div style="display: flex; align-items: center; text-align: right;">
+                    <strong>Key Skills: Process Automation | VBA | Data Management</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>Juggernaut Macros</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  This macro-based spreadsheet automates key processes in managing Creo Parametric files and inventory data imports, improving efficiency and accuracy. Below is a list of included macros and their functions.
+                </p>
+                <h5 style="margin-top:20px">Included Macros</h5>
+                <ul style="text-align: left; max-width: 800px; margin: auto;">
+                  <li><strong>Copy Files:</strong> Copies the latest version of Creo Parametric files and stores them in a designated folder.</li>
+                  <li><strong>Change Creo Version:</strong> Updates the index number of a Creo Parametric file to a user-specified version.</li>
+                  <li><strong>Audit Release Directory:</strong> Moves files from the Release directory to the Archive directory based on file name and type.</li>
+                </ul>
+                <!-- <div style="text-align: center; margin-top: 20px;">
+                  <img src="img/juggernaut_macros.png" width="100%">
+                </div>
+                <p style="background-color:gray;padding:5px;color:white;margin-top: 5px; text-align: center;">Screenshot of the macro-based spreadsheet</p> -->
+                <hr>
+                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>.</span>
+                <div style="margin-top: 10px; padding: 5px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+<!------------------------- Other Design Projects --------------------------------------11---->
+<center>
+  <div class="portfolio-modal modal fade" id="Other_Design_Projects" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div style="display: flex; justify-content: flex-end; align-items: center; height: 30px; margin-top: 0; margin-bottom: 0px;">
+                  <div style="text-align: right;">
+                    <strong>Key Skills: 3D Modeling | Data-Driven Design | Process Optimization</strong>
+                  </div>
+                </div>
+                <hr style="border: 3px solid #231f20;">
+                <h4>My Other Design Projects</h4>
+                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin-bottom:0px !important">
+                  Throughout my career, I have contributed to various mechanical design projects that involved concept development, prototyping, and product launch. Many of these experiences align with data analysis and business intelligence, as they required a systematic approach to problem-solving, leveraging data for decision-making, and optimizing processes for efficiency.
+                </p>
+
+                <section id="hubbell" style="margin-top: -30px; text-align: center !important;">
+                  <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="img/hubbell-logo.png" height="200px" style="clip-path: inset(60px 0 60px 0); display: block; margin-bottom: -50px !important; padding: 0;">
+                  </div>
+                  <hr style = "margin-top: 0px; width: 100%;">
+                  <div>
+                    <img src="img/Hubbell1.png" width="100%">
+                    <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                      <p>The Two-Gang Extender with Swing Arms improves ease of device installation. <a href="https://patents.google.com/patent/US20240162697A1/en?oq=(US20240162697A1)" style="color: white; text-decoration: underline;">Patent Link</a></p>
+                    </div>
+                  </div>
+                  <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-items: center; gap: 20px; align-items: center; margin-top: 40px;">
+                    <img src="img/Hubbell2.png" width="100%">
+                    <img src="img/Hubbell3.png" width="100%">
+                    <img src="img/Hubbell4.png" width="100%">
+                  </div>
+                  <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                    <p>Weatherproof products concepts designed at Hubbell</p>
+                  </div>
+                </section>
+                <hr style = "margin-top: 0px; width: 100%;">
+                <section id="fluidic-energy">
+                  <img src="img/FE_Logo.png" width="400px" style = "margin-top: 20px;margin-bottom: 0px !important; padding: 0;">>
+                  <hr>
+                  <div style="display: grid; grid-template-columns: repeat(2, 1fr); justify-items: center; align-items: center; margin-top: 10px;">
+                    <img src="img/FE_1.png" width="50%" style = "margin-bottom: -50px;">
+                    <img src="img/FE_2.png" width="100%" style = "margin-bottom: -50px;">
+                    <img src="img/FE_3.png" width="100%">
+                    <img src="img/FE_4.png" width="100%">
+                  </div>
+                  <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                    <p>I designed injection molded parts and sheet metal cabinets/enclosures during my time at Fluidic. </p>
+                  </div>
+                </section>
+
+
+
+
+<!-- Reset to One-Column Layout -->
+<div class="single-column">
+  <div style="margin-top: 15px;">
+    <a href="index.html" class="main-link">ABOUT</a>
+    <a href="#" class="main-link" onclick="sendEmail()">CONTACT</a>
+  </div>
+</div>
+
+<script>
+  function sendEmail() {
+    window.location.href = "mailto:riley.laughlin@cox.net?subject=Let's%20Connect!&body=Hi%20Riley,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0AThanks,%0A[Your%20Name]";
+  }
+</script>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

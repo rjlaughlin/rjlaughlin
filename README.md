@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on sports-related projects
 - 📫 How to reach me ... e-mail is the best.
-- ⚡ Fun fact: I have hit one hole-in-one!
+- ⚡ Fun fact: I have hit a one hole-in-one!
 
 <!---
 rjlaughlin/rjlaughlin is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

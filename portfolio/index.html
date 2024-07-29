@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Riley Laughlin | From Engineering to Analytics</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+<!-- Banner -->
+<div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
+  <div style="font-size: 20px; font-weight: bold;">R. Laughlin</div>
+  <div>
+    <a href="index.html" class="nav-link">ABOUT</a>
+    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+    <a href="#" class="nav-link" onclick="sendEmail()">CONTACT</a>
+  </div>
+</div>
+
+<!-- Phoenix Skyline Banner -->
+<div style="position: relative; width: 100%; height: 300px; background: url('https://media.licdn.com/dms/image/v2/D5616AQGctnglPRHcNA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1684360544508?e=1744243200&v=beta&t=8an4iY3JgTXYdyD-R7DXAFCt8q_67dgtw_F7QyljLYY') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
+  <!-- <h1 style="color: white; font-size: 36px; font-weight: bold; background: rgba(0, 0, 0, 0.5); padding: 10px 20px;">Welcome to My Portfolio</h1> -->
+</div>
+
+<!-- Introduction Section -->
+<div style="text-align: center;">
+  <h2 style="font-size: 36px; font-weight: bold; font-family: 'Segoe UI', sans-serif; margin-bottom: 5px; text-transform: uppercase;">Riley Laughlin</h2>
+  <div style="font-size: 28px; font-weight: none; font-family: 'Segoe UI', sans-serif;margin-top: 0;">From Engineering to Analytics</div>
+  <!-- Social Media Links -->
+  <div style="margin-top: 10px;">
+    <a href="https://www.linkedin.com/in/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn" style="width: 40px; height: 40px; filter: invert(100%) grayscale(100%) brightness(200%);">
+    </a>
+    <a href="https://github.com/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/450px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" style="width: 40px; height: 40px; filter: invert(100%) grayscale(100%) brightness(200%);">
+    </a>
+  </div>
+
+<!-- Two-Column Section -->
+<div class="two-column">
+  <!-- Left Column: Text -->
+  <div class="left-column">
+    <img src="http://127.0.0.1:5500/rileyexec1080x1920.jpeg" alt="Riley Laughlin" class="profile-image">
+</div>
+
+  <!-- Right Column: Image -->
+  <div class="right-column">
+    
+  <div class="column-box">
+    <p id="output-text">
+      Hi. My name is Riley Laughlin.<br><br>
+      For the past 10 years, I have been a mechanical design engineer.<br><br>
+      After losing my latest job, I decided to switch paths and pursue a role in data analysis and business intelligence.<br><br>
+      This site contains my portfolio of data and design projects I have worked on throughout my career, including my time at Juggernaut.Case, my MBA program, and my data analytics bootcamp.<br><br>
+      I am actively seeking a new opportunity as a Data Analyst, Business Intelligence Analyst, or Data Engineer. If you believe my skills and experience align with your needs, I’d love to connect!
+    </p>
+      </div>
+  </div>
+
+</div>
+
+
+<!-- Reset to One-Column Layout -->
+<div class="single-column">
+  <div style="margin-top: 15px; position: relative; display: inline-block;">
+    <div id="arrow" class="arrow">
+      <svg width="30" height="35" viewBox="0 0 24 60" fill="none" stroke="#c32aff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3v45M19 30l-7 20-7-20"/>
+      </svg>
+    </div>
+    <a href="portfolio.html" class="main-link" id="portfolio-link">PORTFOLIO</a>
+  </div>
+  <a href="#" class="main-link" onclick="sendEmail()">CONTACT</a>
+</div>
+
+<style>
+  .arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #c32aff;
+    animation: bounce 1s infinite alternate;
+  }
+
+  @keyframes bounce {
+    0% { transform: translateX(-50%) translateY(0); }
+    100% { transform: translateX(-50%) translateY(-10px); }
+  }
+</style>
+
+<script>
+
+  function sendEmail() {
+    window.location.href = "mailto:riley.laughlin@cox.net?subject=Let's%20Connect!&body=Hi%20Riley,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0AThanks,%0A[Your%20Name]";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const arrow = document.getElementById("arrow");
+    const portfolioLink = document.getElementById("portfolio-link");
+
+    // Check if the portfolio link was clicked before
+    if (localStorage.getItem("portfolioClicked")) {
+      arrow.style.display = "none";
+    }
+
+    portfolioLink.addEventListener("click", function () {
+      localStorage.setItem("portfolioClicked", "true");
+      arrow.style.display = "none"; // Hide arrow on click
+    });
+  });
+</script>
+  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
