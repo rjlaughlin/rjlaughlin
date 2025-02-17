@@ -14,30 +14,30 @@
   
 <!-- Banner -->
 <div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
-  <div style="font-size: 20px; font-weight: bold;">R. Laughlin</div>
+  <div style="font-size: clamp(10px,1.04vw,20px); font-weight: bold;">R. Laughlin</div>
   <div>
-    <a href="index.html" class="nav-link">ABOUT</a>
-    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
-    <a href="#" class="nav-link" onclick="sendEmail()">CONTACT</a>
+    <a href="index.html" class="nav-link" style = "font-size: clamp(10px,1.04vw,20px)">ABOUT</a>
+    <a href="portfolio.html" class="nav-link" style = "font-size: clamp(10px,1.04vw,20px)">PORTFOLIO</a>
+    <a href="#" class="nav-link" style = "font-size: clamp(10px,1.04vw,20px)" onclick="sendEmail()">CONTACT</a>
   </div>
 </div>
 
 <!-- Phoenix Skyline Banner -->
-<div style="position: relative; width: 100%; height: 300px; background: url('https://media.licdn.com/dms/image/v2/D5616AQGctnglPRHcNA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1684360544508?e=1744243200&v=beta&t=8an4iY3JgTXYdyD-R7DXAFCt8q_67dgtw_F7QyljLYY') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
+<div class="skyline" style="position: relative; height: clamp(150px,15.625vw,300px); background: url('https://media.licdn.com/dms/image/v2/D5616AQGctnglPRHcNA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1684360544508?e=1744243200&v=beta&t=8an4iY3JgTXYdyD-R7DXAFCt8q_67dgtw_F7QyljLYY') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
   <!-- <h1 style="color: white; font-size: 36px; font-weight: bold; background: rgba(0, 0, 0, 0.5); padding: 10px 20px;">Welcome to My Portfolio</h1> -->
 </div>
 
 <!-- Introduction Section -->
 <div style="text-align: center;">
-  <h2 style="font-size: 36px; font-weight: bold; font-family: 'Segoe UI', sans-serif; margin-bottom: 5px; text-transform: uppercase;">Riley Laughlin</h2>
-  <div style="font-size: 28px; font-weight: none; font-family: 'Segoe UI', sans-serif;margin-top: 0;">From Engineering to Analytics</div>
+  <h2 style="font-size: clamp(28px, 1.875vw, 36px); font-weight: bold; font-family: 'Segoe UI', sans-serif; margin-bottom: 0.26vw; text-transform: uppercase;">Riley Laughlin</h2>
+  <div style="font-size: clamp(22px, 1.46vw, 28px); font-weight: none; font-family: 'Segoe UI', sans-serif;margin-top: 0;">From Engineering to Analytics</div>
   <!-- Social Media Links -->
-  <div style="margin-top: 10px;">
+  <div style="margin-top: 10px; margin-bottom: 20px">
     <a href="https://www.linkedin.com/in/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn" style="width: 40px; height: 40px; filter: invert(100%) grayscale(100%) brightness(200%);">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn" style="width: clamp(30px,2.08vw,40px); height: clamp(30px,2.08vw,40px); filter: invert(100%) grayscale(100%) brightness(200%);">
     </a>
     <a href="https://github.com/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/450px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" style="width: 40px; height: 40px; filter: invert(100%) grayscale(100%) brightness(200%);">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/450px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" style="width: clamp(30px,2.08vw,40px); height: clamp(30px,2.08vw,40px); filter: invert(100%) grayscale(100%) brightness(200%);">
     </a>
   </div>
 
@@ -67,7 +67,7 @@
 
 <!-- Reset to One-Column Layout -->
 <div class="single-column">
-  <div style="margin-top: 15px; position: relative; display: inline-block;">
+  <div style="margin-top: 0.78vw; position: relative; display: inline-block;">
     <div id="arrow" class="arrow">
       <svg width="30" height="35" viewBox="0 0 24 60" fill="none" stroke="#c32aff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 3v45M19 30l-7 20-7-20"/>

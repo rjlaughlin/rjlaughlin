@@ -1,82 +1,105 @@
 /* Set the entire webpage background to black */
+html, body {
+  width: 100%;
+}
+
+
 body {
   background-color: black !important; 
   color: #fff; /* Ensures text is readable */
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.container, .row {
+  width: 100%;
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 
 .banner {
-  height: 45px; /* Set the same height for all */
-  min-height: 45px; /* Ensures consistency */
+  height: 2.34vw; /* Set the same height for all */
+  min-height: 2.34vw; /* Ensures consistency */
+  width: 100vw;
+  max-width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 20px; /* Adjust horizontal padding */
+  /* padding: 0 1.04vw; Adjust horizontal padding */
   margin: 0 !important;
   border: 0;
   box-sizing: border-box; /* Ensures padding doesn't increase height */
 }
 
 .banner div {
-  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  line-height: 1;
   white-space: nowrap; /* Prevents line wrapping */
 }
 
-.container, .row {
-  margin: 0 auto !important;
-  padding: 0 !important;
+.skyline-banner {
+  width: 100vw; /* Ensure full viewport width */
+  max-width: 100%; /* Prevent overflow */
 }
 
 
 /* Two-Column Section */
 .two-column {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Ensures they stay side-by-side */
   align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  font-family: 'Roboto', sans-serif;
+  justify-content: center; /* Centers both columns horizontally */
+  gap: 2vw; /* Adds spacing between text and image */
+  width: 80vw; /* Keeps content from stretching too wide */
+  max-width: 1200px; /* Prevents excessive width */
+  margin: 0 auto; /* Ensures centering within the page */
 }
 
-/* Left Column */
+.left-column, .right-column {
+  flex: 1;  /* Ensures equal space for image and text */
+  display: flex;
+  justify-content: center; /* Centers items inside each column */
+  align-items: center;
+}
+
+/* Right Column
 .right-column {
   flex: 1;
-  min-width: 300px;
+  min-width: clamp(150px,15.625vw,300px);
   display: flex;
   justify-content: flex-start; /* Centers the box inside the column */
-  padding-left: -20%;
-}
+
 
 .column-box {
   background: rgba(255, 255, 255, 0); /* Subtle background */
-  font-size: 20px;
+  font-size: clamp(9px, 1.04vw, 20px);
   color: white;
-  padding: 20px;
   box-shadow: 8px 8px 50px rgba(255, 255, 255, 1); /* Adds shadow */
-  border-radius: 20px;
-  max-width: 650px; /* Controls the box width */
-  margin-left: -50px; /* Adjusts right margin */
-  margin-right: auto; /* Adjusts right margin */
+  border-radius: 1.04vw;
+  min-height: clamp(125px, 15.625vw, 300px); /* Matches image height */
+  max-width: 40vw; /* Adjust width slightly to maintain balance */
+  display: flex;
+  align-items: center; /* Ensures text stays vertically centered */
+  justify-content: center;
 }
 
-/* Right Column */
+/* Left Column
 .left-column {
-  flex: 1;
-  min-width: 300px;
   padding: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: right;
-}
+  align-items: center;
+} */
 
 /* Image Styling */
 .profile-image {
   width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 8px 8px 50px rgba(255, 255, 255, 1); /* Adds shadow */
+  max-width: clamp(125px, 15.625vw, 300px);
+  border-radius: 0.52vw;
+  box-shadow: 0.41vw 0.41vw 2.6vw rgba(255, 255, 255, 1); /* Adds shadow */
   pointer-events: none;
 }
 
@@ -98,30 +121,55 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Responsive: Stack into one column on small screens */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .two-column {
-    flex-direction: column;
+    flex-wrap: nowrap; /* Ensures side-by-side layout */
+    align-items: center;
     text-align: center;
   }
 
-  .left-column,
-  .right-column {
-    text-align: center;
+  .left-column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 1; /* Ensures image is after the text */
   }
+
+  .right-column {
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    order: 2; /* Ensures text box appears first */
+  }
+
+  .column-box {
+    font-size: clamp(9px, 1.04vw, 20px);
+    color: white;
+    padding: 1.04vw;
+    box-shadow: 8px 8px 50px rgba(255, 255, 255, 1); /* Adds shadow */
+    border-radius: 1.04vw;
+    max-width: 33.85vw; /* Controls the box width */
+    margin-left: 0; /* Adjusts right margin */
+    margin-right: auto;
+    align-items: center
+  }
+
 }
 
 
 /* Style for top navigation links */
 .nav-link {
   color: #fff;
+  display: flex;
   font-weight: bold;
   text-decoration: none;
-  margin: 0 15px !important; /* Force consistent spacing */
-  padding: 5px 10px !important; /* Ensure Bootstrap doesn't override */
+  margin: 0 0.78vw !important; /* Force consistent spacing */
+  padding: 0.26vw 0.52vw !important; /* Ensure Bootstrap doesn't override */
   transition: color 0.3s ease-in-out, text-decoration 0.2s ease-in-out;
   display: inline-block !important;
   white-space: nowrap; /* Prevents wrapping */
+  line-height: 1;
 }
 
 .nav-link:hover {
@@ -130,16 +178,16 @@ body {
 }
 
 .main-link {
-  border: 5px solid white; /* Thick white border */
-  padding: 10px 20px; 
-  margin: 5px 20px 50px 20px !important;
+  border: 0.26vw solid white; /* Thick white border */
+  padding: 0.52vw 1.04vw; 
+  margin: 0.26vw 1.04vw 2.6vw 1.04vw !important;
   display: inline-block;
   background-color: transparent; /* Transparent background */
   color: white; /* White text */
   text-decoration: none;
   font-weight: bold;
-  border-radius: 12.5px;
-  font-size: 18px; /* Adjust font size as needed */
+  border-radius: 0.65vw;
+  font-size: clamp(12px,0.9375vw,18px); /* Adjust font size as needed */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.2s ease; /* Smooth transition for background color */
 }
@@ -148,26 +196,6 @@ body {
   border: 5px solid #c32aff;
   color: #c32aff;
   text-decoration: underline;
-}
-
-
-
-
-/* Hover effect for the inactive button */
-.time-btn:hover {
-  background-color: #98c5f1;  /* Light gray background on hover */
-}
-
-/* Active button style */
-.time-btn.active {
-  background-color: #007bff;  /* Blue background */
-  color: white;               /* White text */
-  border-color: #007bff;      /* Blue border */
-}
-
-/* Hover effect for the active button */
-.time-btn.active:hover {
-  background-color: #0056b3;  /* Slightly darker blue for hover effect */
 }
 
 
