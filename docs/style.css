@@ -354,10 +354,20 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 576px) { /* Targets screens smaller than 576px */
   #portfolio .portfolio-item {
-    flex: 0 0 33%; /* Makes each item take full width */
-    max-width: 40%;
-    height: 10px;
-    object-fit: fit;
+    flex: 0 0 40%; /* Controls width */
+    max-width: 33%;
+    height: 180px; /* Set a reasonable height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Ensure images inside portfolio blocks are uniform */
+  #portfolio .portfolio-item img {
+    max-height: 100%; /* Prevents images from overflowing */
+    width: auto; /* Keeps the aspect ratio */
+    object-fit: cover; /* Ensures images fill the space properly */
   }
 }
 
@@ -377,7 +387,7 @@ body {
 }
 @media (min-width: 1800px) {
   .portfolio-modal .modal-dialog {
-    max-width: 30vw;
+    max-width: 40vw;
   }
 }
 
