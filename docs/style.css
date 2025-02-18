@@ -524,7 +524,7 @@ body {
     align-items: center; 
     justify-content: center;
     text-align: right;
-    font-size: clamp(10px, 0.833vw, 16px) !important;
+    font-size: clamp(7px, 0.833vw, 16px) !important;
 
   }
 
