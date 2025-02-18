@@ -83,7 +83,7 @@ $(function () {
 
   // Enable scrolling inside modal
   a(".portfolio-modal .modal-content").on("touchmove", function(e) {
-      e.stopPropagation(); // Prevent body from intercepting scroll
-  });
+    e.stopPropagation(); // Keeps scrolling inside the modal
+}).css("overflow-y", "auto"); // Ensure the modal can scroll
 
 }(jQuery);

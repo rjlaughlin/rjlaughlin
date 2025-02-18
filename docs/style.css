@@ -380,11 +380,11 @@ body {
   }
 
   .modal-content {
-    overflow-y: auto;
+    overflow-y: auto !important;
   }
 
   .modal-body {
-    overflow-y: auto;
+    overflow-y: auto !important;
   }
 
   .column {
@@ -457,8 +457,8 @@ body {
 .portfolio-modal .modal-dialog {
   /* left: 0%; Moves it to the middle horizontally */
   /* margin: 3rem; */
-  min-width: 85vw;
-  max-height: 95vh;
+  min-width: 80vw;
+  max-height: 90vh;
   overflow-y: auto;
 }
 @media (min-width: 1000px) {
@@ -473,6 +473,7 @@ body {
 }
 
 .portfolio-modal .modal-content {
+  max-height: 85vh;
   padding: 10px 0;
 }
 
