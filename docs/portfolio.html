@@ -33,7 +33,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h3 class="section-subheading text-muted" style = "color: white !important;margin-top: 15px">Here are some of my projects</h3>
+          <h3 class="section-subheading text-muted" style = "color: white !important;margin-top: 15px; font-size: clamp()">Here are some of my projects</h3>
           <div id="portfolio-button-container">
             <button class="btn btn-secondary active" data-portfolio-section="all">Show all</button>
             <button class="btn btn-secondary" data-portfolio-section="data">Data</button>
@@ -245,40 +245,40 @@
                     <strong>Key Skills: Extract, Transform, Load (ETL) | Python | JavaScript & HTML</strong>
                   </div>
                 </div>
-                <hr class = "modal-line" style="border: 3px solid #231f20;">
-                <h4 class = "modal-header">Bitcoin - An Analysis of the First Cryptocurrency</h4>
+                <hr class = "modal-line">
+                <h4 class = "modal-header" style = "text-align: center">Bitcoin - An Analysis of the First Cryptocurrency</h4>
                 <div class = "modal-text">
                 <p class = "modal-text" style="max-width: 100%;">In my data analytics bootcamp, I was part of a project that analyzed Bitcoin's historical price movements to provide insights into market trends and volatility. Through visualizations, it aims to help readers understand Bitcoin's price behavior over time.</p>
-                <p class = "modal-text" style = "margin-top:0; margin-bottom:15px;">To achieve this, we used several technologies, including:</p>
-                <ul style = "margin-top:0; margin-bottom:15px;">
+                <p class = "modal-text" style = "margin-top:0; margin-bottom:0.78125vw;">To achieve this, we used several technologies, including:</p>
+                <ul style = "margin-top:0; margin-bottom:0.78125vw;">
                   <li>Python, Jupyter Notebook, and Pandas for data acquisition and manipulation.</li>
                   <li>JavaScript, HTML, CSS, and D3 for interactive visualizations.</li>
                   <li>Plotly and Matplotlib for advanced charting techniques.</li>
-                  <li style = "margin-top:0; margin-bottom:15px;">Splinter and PIL for web scraping and image processing.</li>
+                  <li style = "margin-top:0; margin-bottom:0.78125vw;">Splinter and PIL for web scraping and image processing.</li>
                 </ul>
-                <p style = "margin-top:0; margin-bottom:15px;">Data sources include CoinMarketCap for historical Bitcoin prices and Fidelity for ETF data.</p>
-                <p style = "margin-top:0; margin-bottom:15px;">The dashboard features several key visualizations:</p>
-                <ul style = "margin-top:0; margin-bottom:15px;">
+                <p style = "margin-top:0; margin-bottom:0.78125vw;">Data sources include CoinMarketCap for historical Bitcoin prices and Fidelity for ETF data.</p>
+                <p style = "margin-top:0; margin-bottom:0.78125vw;">The dashboard features several key visualizations:</p>
+                <ul style = "margin-top:0; margin-bottom:0.78125vw;">
                   <li><strong>Bitcoin Price Over Time:</strong> Tracks Bitcoin’s price with adjustable time units (days, months, or years).</li>
                   <li><strong>Dollar Change vs. Percentage Change Heatmap:</strong> Displays Bitcoin’s volatility based on different timeframes.</li>
-                  <li style = "margin-top:0; margin-bottom:15px;"><strong>Google Trends Bitcoin Search Interest:</strong> Visualizes Bitcoin-related search activity across U.S. states.</li>
+                  <li style = "margin-top:0; margin-bottom:0.78125vw;"><strong>Google Trends Bitcoin Search Interest:</strong> Visualizes Bitcoin-related search activity across U.S. states.</li>
                 </ul>
-                <p style = "margin-top:0; margin-bottom:20px;";>The first two charts are controlled by two sets of buttons, allowing over 14 visualization combinations based on selections.</p>
+                <p style = "margin-top:0; margin-bottom:1.04vw;";>The first two charts are controlled by two sets of buttons, allowing over 14 visualization combinations based on selections.</p>
               </div>
-                <div style="display: flex; justify-content: space-between; gap: 20px;">
-                  <div style="position: relative;">
-                    <img src="img/filled_bitcoin.gif" style = "background-color:black" width="300px">
-                    <p style="background-color:gray;padding:5px;color:white;">I generated a GIF using Python that fills the Bitcoin logo.</p>
-                  </div>
-                  <img src="img/bitcoin_dashboard.png" width="500px">
+              <div style="display: flex; justify-content: space-between; gap: 0.52vw;">
+                <div style="position: relative; width: 37.5%;">
+                  <img src="img/filled_bitcoin.gif" style="background-color:black; width: 100%; max-width: 300px;">
+                  <p class="modal-text" style="background-color:gray;padding:5px;color:white;">I generated a GIF using Python that fills the Bitcoin logo.</p>
                 </div>
-                <div style="text-align: center; margin-top: 10px;">
+                <img src="img/bitcoin_dashboard.png" style="width: 62.5%; max-width: 500px;">
+              </div>
+                <div style="text-align: center; margin-top: 0.52vw;">
                   <img src="img/bitcoin_volatility.png" width="100%">
                 </div>
-                <p style="background-color:gray;padding:5px;color:white;margin-top: 5px;" width="700px">Chart plotting Bitcoin and Bitcoin ETF price changes</p>
+                <p class = "modal-text" style="background-color:gray;padding:0.26vw;color:white;margin-top: 0.26vw;" width="36.46vw">Chart plotting Bitcoin and Bitcoin ETF price changes</p>
                 <hr>
-                <span>The source code of the project is available on <a href="https://github.com/Cmagor1819/team-7-project3">GitHub</a>.</span>
-                <div style="margin-top: 5px;">
+                <span class = "modal-text">The source code of the project is available on <a href="https://github.com/Cmagor1819/team-7-project3">GitHub</a>.</span>
+                <div style="margin-top: 0.26vw;">
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://cmagor1819.github.io/team-7-project3/">Dashboard</a>
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/Cmagor1819/team-7-project3">GitHub</a>
                 </div>
@@ -304,29 +304,31 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/juggernaut-case-logo.jpg" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right; white-space: nowrap;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/juggernaut-case-logo.jpg">
+                  <div class = "key-skills">
                     <strong>Key Skills: Project Requirements | Project Management | Stakeholder Collaboration</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>OPRTR TA5 - Rugged Case Development</h4>
-                <p style="max-width: 100%; margin-bottom:15px;">I led the design, build, and launch of the OPRTR case for the Samsung Galaxy Tab Active 5. This case is designed for operators requiring a rugged and adaptable mounting solution in various environments, including vehicle dashboards, chest molle mounts, and kneeboard mounts.</p>
-                <p style="margin-top:0; margin-bottom:15px;">Key highlights of the project include:</p>
-                <ul style="margin-top:0; margin-bottom:15px;">
+                <hr class = "modal-line">
+                <h4 class = "modal-header">OPRTR TA5 - Rugged Case Development</h4>
+                <div class = "modal-text">
+                <p style="max-width: 100%; margin-bottom:0.78125vw;">I led the design, build, and launch of the OPRTR case for the Samsung Galaxy Tab Active 5. This case is designed for operators requiring a rugged and adaptable mounting solution in various environments, including vehicle dashboards, chest molle mounts, and kneeboard mounts.</p>
+                <p style="margin-top:0; margin-bottom:0.78125vw;">Key highlights of the project include:</p>
+                <ul style="margin-top:0; margin-bottom:0.78125vw;">
                   <li>Understanding and defining product requirements based on end-user needs.</li>
                   <li>Managing the project lifecycle from concept to launch, ensuring timely delivery.</li>
                   <li>Collaborating with stakeholders, including manufacturers, to refine design specifications.</li>
                   <li>Ensuring the case met durability and usability standards for field operations.</li>
                 </ul>
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: center;">
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.04vw; align-items: center;">
                   <img src="img/Picture1.png" width="100%">
                   
                   <!-- Wrap bar chart and text in a container -->
                   <div style="display: flex; flex-direction: column; align-items: center;">
                     <img src="img/bar.png" width="100%" style = "margin-bottom: 0px;">
-                    <p style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">This chart shows the financial performance of my projects at Juggernaut.Case. The TA5 OPRTR was the highest-earning SKU among my project SKUs during my tenure, showcasing its market impact.</p>
+                    <p class = "modal-text" style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">This chart shows the financial performance of my projects at Juggernaut.Case. The TA5 OPRTR was the highest-earning SKU among my project SKUs during my tenure, showcasing its market impact.</p>
                   </div>
                 
                   <img src="img/percent_contribution.png" width="100%">
@@ -356,37 +358,39 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/juggernaut-case-logo.jpg" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right; white-space: nowrap;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/juggernaut-case-logo.jpg" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
+                  <div class = "key-skills">
                     <strong>Key Skills: Project Requirements | Project Management | Stakeholder Collaboration</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>Juggernaut.Case Projects</h4>
-                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                <hr class = "modal-line">
+                <h4 class = "modal-header">Juggernaut.Case Projects</h4>
+                <div class = "modal-text">
+                <p style= "color: #231f20; text-align: left; max-width: 800px; margin: auto;">
                   Juggernaut.Case designed ruggedized cases, mounts, and cables for military operators. During my time at Juggernaut, I was in charge of the design and launch of 10+ SKUs. Many of the skills I developed in design engineering translate seamlessly to data analysis and business intelligence, including proficiency in various technological tools, strong project management capabilities, and effective collaboration within cross-functional teams.
                 </p>
-            
-                <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: -5px;">
-                  <div style="display: flex; gap: 20px;">
-                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                </div>
+
+                <div style="display: flex; justify-content: center; align-items: center; gap: 2.08vw; margin-top: 0px;">
+                  <div style="display: flex; gap: 1.041vw;">
+                    <div style="width: clamp(80px,10.41vw,200px); height: clamp(80px,10.41vw,200px); background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: clamp(24px,2.08vw,40px); font-weight: bold;">
                       <span>10+</span>
-                      <div style="font-size: 24px; margin-top: 5px;">SKUs</div>
+                      <div style="font-size: clamp(11px,1.25vw,24px); margin-top: 5px;">SKUs</div>
                     </div>
-                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                    <div style="width: clamp(80px,10.41vw,200px); height: clamp(80px,10.41vw,200px); background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: clamp(24px,2.08vw,40px); font-weight: bold;">
                       <span>$2M</span>
-                      <div style="font-size: 24px; margin-top: 5px;">Revenue</div>
+                      <div style="font-size: clamp(11px,1.25vw,24px); margin-top: 5px;">Revenue</div>
                     </div>
-                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                    <div style="width: clamp(80px,10.41vw,200px); height: clamp(80px,10.41vw,200px); background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: clamp(24px,2.08vw,40px); font-weight: bold;">
                       <span>7</span>
-                      <div style="font-size: 24px; margin-top: 5px;">Programs</div>
+                      <div style="font-size: clamp(11px,1.25vw,24px); margin-top: 5px;">Programs</div>
                     </div>
                   </div>
                   <img src="img/pie2.png" width="35%" height="35%%" style="border-radius: 10px;">
                 </div>
             
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: center; margin-top: 40px;">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: center; margin-top: 2.08vw;">
                   <img src="img/ENDVR_i14_Pro_Hero_SG.png" width="100%">
                   <img src="img/JG.ADVNTR.GLXY.S23_1-BLK.png" width="100%">
                   <img src="img/JG.ADVNTR.GLXY.S23U_1-FDE.png" width="100%">
@@ -418,41 +422,42 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/juggernaut-case-logo.jpg" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/juggernaut-case-logo.jpg">
+                  <div class = "key-skills">
                     <strong>Key Skills: Process Improvement | SQL Querying | Visual Basic for Applications</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>ECN-Fishbowl Part Number Import</h4>
-                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                <hr class = "modal-line">
+                <h4 class = "modal-header">ECN-Fishbowl Part Number Import</h4>
+                <div class = "modal-text">
+                <p style="color: #231f20; text-align: left; max-width: 800px; margin: auto;">
                   Upon joining Juggernaut, I found that the company lacked sophistication in product data and lifecycle management. Processes were often dependent on Google Sheets, leading to inefficiencies. As part of our ECN process, data was entered in multiple locations manually. To streamline this workflow, I developed a VBA-based script that extracted data from an ECN spreadsheet and converted it into an importable CSV file for Fishbowl Inventory Management. This significantly reduced data entry time and improved process efficiency.
                 </p>
-                <p style="font-size: 17px; color: #231f20; text-align: center; max-width: 800px; margin: 10px;">
+                <p style="color: #231f20; text-align: center; max-width: 800px; margin: 10px;">
                   The automated process provided several key benefits:
                 </p>
-                <ul style="font-size: 17px; color: #231f20; text-align: center; max-width: 800px; margin: 0 auto; display: block;">
+                <ul style="color: #231f20; text-align: center; max-width: 800px; margin: 0 auto; display: block;">
                   <li>Automated data entry into Fishbowl, reducing manual input errors.</li>
                   <li>Automated file transfer to the designated Release directory, ensuring consistency.</li>
                   <li>Expedited ECN auditing by fellow engineers, improving review and approval efficiency.</li>
                 </ul>
-  
+              </div>
                 
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: center; margin-top: 40px;">
                   <div style="display: flex; flex-direction: column; align-items: center;">
                     <img src="img/Picture5.png" width="100%" style = "margin-bottom: 0px;">
-                    <p style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">Custom userform to select a specific ECN.
+                    <p class = "modal-text" style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">Custom userform to select a specific ECN.
                     </p>
                   </div>
                   <div style="display: flex; flex-direction: column; align-items: center;">
                     <img src="img/Picture6.png" width="100%" style = "margin-bottom: 0px;">
-                    <p style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">SQL code to query the Fishbowl management 
+                    <p class = "modal-text" style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 100%;">SQL code to query the Fishbowl management 
                       system on existing part numbers.</p>
                   </div>
                 </div>
                 <hr>
-                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>.</span>
+                <span class = "modal-text">The source code of the project is available on <a href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>.</span>
                 <div style="margin-top: 5px;">
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>
                 </div>
@@ -480,31 +485,33 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/hubbell-logo.png" height="125px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/hubbell-logo.png">
+                  <div class = "key-skills">
                     <strong>Key Skills: Summary Statistics | System Development | Process Automation</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>Hubbell Quality Management System</h4>
-                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                <hr class = "modal-line">
+                <h4 class = "modal-header">Hubbell Quality Management System</h4>
+                <div class = "modal-text">
+                <p style="color: #231f20; text-align: left; max-width: 800px; margin: auto;">
                   The Quality Tracking Spreadsheet utilizes the 8D (Eight Disciplines) Methodology for structured problem-solving and quality improvement. This system tracks, analyzes, and resolves issues to enhance product quality and prevent recurrence.
                 </p>
-                
-                <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 5px;">
-                  <div style="display: flex; gap: 20px;">
-                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+              </div>
+
+                <div style="display: flex; justify-content: center; align-items: center; gap: 2.08vw; margin-top: 5px;">
+                  <div style="display: flex; gap: 1.04vw;">
+                    <div style="width: clamp(80px,10.41vw,200px); height: clamp(80px,10.41vw,200px); background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: clamp(24px,2.08vw,40px); font-weight: bold;">
                       <span>31</span>
-                      <div style="font-size: 24px; margin-top: 5px;">Issues Resolved</div>
+                      <div style="font-size: clamp(8px,1.25vw,24px); margin-top: 5px;">Issues Resolved</div>
                     </div>
-                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                    <div style="width: clamp(80px,10.41vw,200px); height: clamp(80px,10.41vw,200px); background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: clamp(24px,2.08vw,40px); font-weight: bold;">
                       <span>82%</span>
-                      <div style="font-size: 24px; margin-top: 5px;">Complete</div>
+                      <div style="font-size: clamp(11px,1.25vw,24px); margin-top: 5px;">Complete</div>
                     </div>
-                    <div style="width: 200px; height: 200px; background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 40px; font-weight: bold;">
+                    <div style="width: clamp(80px,10.41vw,200px); height: clamp(80px,10.41vw,200px); background-color: #231f20; color: white; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: clamp(24px,2.08vw,40px); font-weight: bold;">
                       <span>62</span>
-                      <div style="font-size: 24px; margin-top: 5px;">Days Avg</div>
+                      <div style="font-size: clamp(11px,1.25vw,24px); margin-top: 5px;">Days Avg</div>
                     </div>
                   </div>
                 </div>
@@ -514,14 +521,14 @@
                   <div style="display: flex; flex-direction: column; gap: 0px;">
                       <div style="text-align: center;">
                           <img src="img/QMS_1.png" style="width: 100%; border: 1px solid black; margin:0px;padding:0px">
-                          <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                          <div class = "modal-text" style="background-color: gray; color: white; margin:0px;padding:0px">
                               <p>Initial view of the quality log</p>
                           </div>
                       </div>
               
                       <div style="text-align: center;">
                           <img src="img/QMS_2.jpg" style="width: 100%; border: 1px solid black;margin:0px;padding:0px">
-                          <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                          <div class = "modal-text" style="background-color: gray; color: white; margin:0px;padding:0px">
                               <p>Chart detailing open vs. closed issues</p>
                           </div>
                       </div>
@@ -530,7 +537,7 @@
                   <!-- Right Side (One Large Image) -->
                   <div style="text-align: center;">
                       <img src="img/QMS_3.png" style="width: 100%; height: 100%; object-fit: cover; border: 1px solid black;margin:0px;padding:0px">
-                      <div style="background-color: gray; color: white; margin:0px;padding:0px">
+                      <div class = "modal-text" style="background-color: gray; color: white; margin:0px;padding:0px">
                           <p>Final 8D Form</p>
                       </div>
                   </div>
@@ -545,7 +552,7 @@
                   <!-- <img src="img/QMS_4.gif" width="100%" > -->
                 </div>
                 <hr>
-                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/Quality-Management">GitHub</a>.</span>
+                <span class = "modal-text">The source code of the project is available on <a href="https://github.com/rjlaughlin/Quality-Management">GitHub</a>.</span>
                 <div style="margin-top: 5px;">
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/Quality-Management">GitHub</a>
                 </div>

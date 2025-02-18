@@ -398,6 +398,10 @@ body {
   cursor: pointer
 }
 
+.section-subheading {
+  font-size: 16px;
+}
+
 .logo {
     height: 50%; /* Adjust width dynamically */
     max-width: 100px; /* Cap the size */
@@ -405,16 +409,44 @@ body {
 
 .modal-header {
   font-size: 15px !important;
-  margin-top: 0px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 5px !important;
 }
 
 .modal-line {
   margin-bottom: 0px !important;
+  border: 2px solid #231f20 !important;
 }
 
 .modal-text {
   font-size: 10px !important;
   margin-bottom: 0.78125vw !important;
+}
+
+.btn-secondary {
+  font-size: 12px !important;
+}
+
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 5px !important;  /* Move closer to the top */ 
+  right: 37.5px !important; /* Move closer to the right */
+  width: 12.5px !important;  /* Reduce size */
+  height: 12.5px !important; /* Reduce size */
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.portfolio-modal .close-modal .lr {
+  /* Safari and Chrome */
+  height: 12.5px !important;
+  margin-left: 0px;
+}
+
+.portfolio-modal .close-modal .lr .rl {
+  /* Safari and Chrome */
+  height: 12.5px !important;
 }
 
 }
@@ -425,7 +457,7 @@ body {
 .portfolio-modal .modal-dialog {
   /* left: 0%; Moves it to the middle horizontally */
   /* margin: 3rem; */
-  min-width: 90vw;
+  min-width: 85vw;
   max-height: 95vh;
   overflow-y: auto;
 }
@@ -465,39 +497,49 @@ body {
   margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-
 .portfolio-modal .modal-content button {
   cursor: pointer;
 }
 
   .header-container {
     display: flex;
-    align-items: center;  /* Ensures vertical centering */
+    align-items: center !important;  /* Ensures vertical centering */
     justify-content: space-between;
     height: 1.5625vw; /* Allow flexible height */
     padding: 0px 0; /* Optional: Ensures no clipping */
+    line-height: normal !important;
   }
 
   .logo {
-    display: block;
-    align-self: center; 
-    margin-top:0px; 
-    margin-bottom:0px;
+    display: block; 
     width: 200px;
     height: auto; /* Maintain aspect ratio */
+    padding: 0 !important;
+    margin: 0 !important;
     
   }
 
   .key-skills {
     display: flex; 
     align-items: center; 
+    justify-content: center;
     text-align: right;
     font-size: clamp(10px, 0.833vw, 16px) !important;
 
   }
+
+  .modal-line {
+    border: 3px solid #231f20;
+    margin-bottom: 0px;
+  }
+
+  .modal-header {
+    display: flex !important;  /* Enables flexbox */
+    justify-content: center !important; /* Centers horizontally */
+    align-items: center !important; /* Centers vertically */
+    width: 100%; /* Ensures full width */
+    text-align: center !important; /* Ensures text is centered */
+}
 
   .modal-text {
     margin-bottom: 15px;
