@@ -430,23 +430,23 @@ body {
 
 .portfolio-modal .close-modal {
   position: absolute;
-  top: 5px !important;  /* Move closer to the top */ 
-  right: 37.5px !important; /* Move closer to the right */
-  width: 12.5px !important;  /* Reduce size */
-  height: 12.5px !important; /* Reduce size */
+  top: 10px !important;  /* Move closer to the top */ 
+  right: 45px !important; /* Move closer to the right */
+  width: 20px !important;  /* Reduce size */
+  height: 20px !important; /* Reduce size */
   cursor: pointer;
   background-color: transparent;
 }
 
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
-  height: 12.5px !important;
+  height: 20px !important;
   margin-left: 0px;
 }
 
 .portfolio-modal .close-modal .lr .rl {
   /* Safari and Chrome */
-  height: 12.5px !important;
+  height: 20px !important;
 }
 
 }
@@ -457,7 +457,7 @@ body {
 .portfolio-modal .modal-dialog {
   /* left: 0%; Moves it to the middle horizontally */
   /* margin: 3rem; */
-  min-width: 80vw;
+  width: 85vw;
   max-height: 90vh;
   overflow-y: auto;
 }
