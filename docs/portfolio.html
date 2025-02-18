@@ -16,17 +16,17 @@
   
 <!-- Banner -->
 <div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
-  <div style="font-size: 20px; font-weight: bold;">R. Laughlin</div>
+  <div style="font-size: clamp(12px,1.04vw,20px); font-weight: bold;">R. Laughlin</div>
   <div>
-    <a href="index.html" class="nav-link">ABOUT</a>
-    <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
-    <a href="#contact" class="nav-link">CONTACT</a>
+    <a href="index.html" style = "font-size: clamp(9px,0.83vw,16px)" class="nav-link">ABOUT</a>
+    <a href="portfolio.html" style = "font-size: clamp(9px,0.83vw,16px)" class="nav-link">PORTFOLIO</a>
+    <a href="#contact" style = "font-size: clamp(9px,0.83vw,16px)" class="nav-link">CONTACT</a>
   </div>
 </div>
 
 <!-- Phoenix Skyline Banner -->
-<div style="position: relative; width: 100%; height: 300px; background: url('https://t4.ftcdn.net/jpg/00/94/75/29/360_F_94752988_MYOfnIZ0Ir13eLZsGRKe4enmf14MVFli.jpg') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
-  <h1 style="color: white; font-size: 36px; font-weight: bold; background: rgba(0, 0, 0, 0.5); padding: 10px 20px;">Welcome to My Portfolio</h1>
+<div style="position: relative; width: 100%; height: clamp(150px,15.625vw,300px); background: url('https://t4.ftcdn.net/jpg/00/94/75/29/360_F_94752988_MYOfnIZ0Ir13eLZsGRKe4enmf14MVFli.jpg') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
+  <h1 style="color: white; font-size: clamp(24px,1.875vw,36px); font-weight: bold; background: rgba(0, 0, 0, 0.5); padding: 10px 20px;">Welcome to My Portfolio</h1>
 </div>
   
   <section style = "background-color: black;" id="portfolio">
@@ -239,16 +239,17 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;"">
-                  <div style="display: flex; align-items: center; text-align: right;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/Arizona_State_University_Logo.png">
+                  <div class = "key-skills">
                     <strong>Key Skills: Extract, Transform, Load (ETL) | Python | JavaScript & HTML</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>Bitcoin - An Analysis of the First Cryptocurrency</h4>
-                <p style="max-width: 100%; margin-bottom:15px;">In my data analytics bootcamp, I was part of a project that analyzed Bitcoin's historical price movements to provide insights into market trends and volatility. Through visualizations, it aims to help readers understand Bitcoin's price behavior over time.</p>
-                <p style = "margin-top:0; margin-bottom:15px;">To achieve this, we used several technologies, including:</p>
+                <hr class = "modal-line" style="border: 3px solid #231f20;">
+                <h4 class = "modal-header">Bitcoin - An Analysis of the First Cryptocurrency</h4>
+                <div class = "modal-text">
+                <p class = "modal-text" style="max-width: 100%;">In my data analytics bootcamp, I was part of a project that analyzed Bitcoin's historical price movements to provide insights into market trends and volatility. Through visualizations, it aims to help readers understand Bitcoin's price behavior over time.</p>
+                <p class = "modal-text" style = "margin-top:0; margin-bottom:15px;">To achieve this, we used several technologies, including:</p>
                 <ul style = "margin-top:0; margin-bottom:15px;">
                   <li>Python, Jupyter Notebook, and Pandas for data acquisition and manipulation.</li>
                   <li>JavaScript, HTML, CSS, and D3 for interactive visualizations.</li>
@@ -263,6 +264,7 @@
                   <li style = "margin-top:0; margin-bottom:15px;"><strong>Google Trends Bitcoin Search Interest:</strong> Visualizes Bitcoin-related search activity across U.S. states.</li>
                 </ul>
                 <p style = "margin-top:0; margin-bottom:20px;";>The first two charts are controlled by two sets of buttons, allowing over 14 visualization combinations based on selections.</p>
+              </div>
                 <div style="display: flex; justify-content: space-between; gap: 20px;">
                   <div style="position: relative;">
                     <img src="img/filled_bitcoin.gif" style = "background-color:black" width="300px">

@@ -39,6 +39,8 @@ $(function () {
 
 !function(a) {
   "use strict";
+  
+  // Smooth scrolling for internal links
   a('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
           var o = a(this.hash);
@@ -48,23 +50,40 @@ $(function () {
               }, 1e3, "easeInOutExpo"),
               !1
       }
-  }),
+  });
+
+  // Collapse mobile nav when clicking a link
   a(".js-scroll-trigger").click(function() {
-      a(".navbar-collapse").collapse("hide")
-  }),
+      a(".navbar-collapse").collapse("hide");
+  });
+
+  // Activate scrollspy
   a("body").scrollspy({
       target: "#mainNav",
       offset: 56
   });
+
+  // Navbar shrink function
   var o = function() {
-      a("#mainNav").offset().top > 100 ? a("#mainNav").addClass("navbar-shrink") : a("#mainNav").removeClass("navbar-shrink")
+      a("#mainNav").offset().top > 100 ? a("#mainNav").addClass("navbar-shrink") : a("#mainNav").removeClass("navbar-shrink");
   };
-  o(),
-  a(window).scroll(o),
-  a(".portfolio-modal").on("show.bs.modal", function(o) {
-      a(".navbar").addClass("d-none")
-  }),
-  a(".portfolio-modal").on("hidden.bs.modal", function(o) {
-      a(".navbar").removeClass("d-none")
-  })
+  o();
+  a(window).scroll(o);
+
+  // Handle modals: Hide navbar when modal is open
+  a(".portfolio-modal").on("show.bs.modal", function() {
+      a(".navbar").addClass("d-none");
+      a("body").addClass("modal-open"); // Prevent background scroll
+  });
+
+  a(".portfolio-modal").on("hidden.bs.modal", function() {
+      a(".navbar").removeClass("d-none");
+      a("body").removeClass("modal-open"); // Restore background scroll
+  });
+
+  // Enable scrolling inside modal
+  a(".portfolio-modal .modal-content").on("touchmove", function(e) {
+      e.stopPropagation(); // Prevent body from intercepting scroll
+  });
+
 }(jQuery);
