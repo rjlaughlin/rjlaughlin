@@ -430,24 +430,36 @@ body {
 
 .portfolio-modal .close-modal {
   position: absolute;
-  top: 10px !important;  /* Move closer to the top */ 
-  right: 45px !important; /* Move closer to the right */
-  width: 20px !important;  /* Reduce size */
-  height: 20px !important; /* Reduce size */
+  top: 5px !important;  /* Move closer to the top */ 
+  right: 37.5px !important; /* Move closer to the right */
+  width: 12.5px !important;  /* Reduce size */
+  height: 12.5px !important; /* Reduce size */
   cursor: pointer;
   background-color: transparent;
+  z-index: 9999; /* Ensure it's above everything */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
-  height: 20px !important;
+  height: 12.5px !important;
   margin-left: 0px;
 }
 
 .portfolio-modal .close-modal .lr .rl {
   /* Safari and Chrome */
-  height: 20px !important;
+  height: 12.5px !important;
 }
+
+/* Style the 'X' icon inside */
+.portfolio-modal .close-modal::before {
+  content: "✖"; /* Unicode for 'X' */
+  font-size: 24px;
+  color: black;
+}
+
 
 }
 
@@ -473,7 +485,6 @@ body {
 }
 
 .portfolio-modal .modal-content {
-  max-height: 85vh;
   padding: 10px 0;
 }
 

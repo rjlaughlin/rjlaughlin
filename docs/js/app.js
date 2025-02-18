@@ -5,7 +5,9 @@ $(document).ready(function() {
   });
 });
 
-
+$(document).on("click", ".close-modal", function () {
+  $(".portfolio-modal").modal("hide");
+});
 
 
 // function for buttons
