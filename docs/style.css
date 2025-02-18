@@ -369,6 +369,13 @@ body {
     width: auto; /* Keeps the aspect ratio */
     object-fit: cover; /* Ensures images fill the space properly */
   }
+
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    font-size: 1.146vw;
+    position: absolute;
+    
+  }
+
 }
 
 /* -------------------- MODAL ------------------ */
