@@ -351,6 +351,16 @@ body {
   border-radius: 10px;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 576px) { /* Targets screens smaller than 576px */
+  #portfolio .portfolio-item {
+    flex: 0 0 33%; /* Makes each item take full width */
+    max-width: 40%;
+    height: 10px;
+    object-fit: fit;
+  }
+}
+
 /* -------------------- MODAL ------------------ */
 
 /* width of modal: different following the device: small (100%), medium(50%), large(30%); */
