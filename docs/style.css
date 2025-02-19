@@ -414,6 +414,10 @@ body {
   padding: 5px !important;
 }
 
+.modal-header.subheader {
+  font-size: 13px !important;
+}
+
 .modal-line {
   margin-bottom: 0px !important;
   border: 2px solid #231f20 !important;
@@ -522,6 +526,14 @@ body.modal-open {
   font-style: italic;
   margin: 20px 0 30px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.portfolio-modal .modal-content ul {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0; /* Remove default left padding */
 }
 
 .portfolio-modal .modal-content ul.list-inline {

@@ -29,6 +29,11 @@ $(document).ready(function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  let video = document.querySelector("video");
+  video.play().catch(error => console.log("Autoplay prevented:", error));
+});
+
 // function for buttons
 
 $(function () {
