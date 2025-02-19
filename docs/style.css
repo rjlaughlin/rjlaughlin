@@ -487,20 +487,20 @@ body.modal-open {
   justify-content: center;
 
 }
-@media (min-width: 1000px) {
+@media (min-width: 777px) {
   .portfolio-modal .modal-dialog {
     min-width: 70vw;
     align-items: flex-start !important;
-    overflow: auto;
-    overflow-y: auto;
+    overflow: auto !important;
+    overflow-y: auto !important;
   }
 }
 @media (min-width: 1800px) {
   .portfolio-modal .modal-dialog {
     max-width: 40vw;
     align-items: flex-start !important;
-    overflow: auto;
-    overflow-y: auto;
+    overflow: auto !important;
+    overflow-y: auto !important;
   }
 }
 

@@ -641,23 +641,25 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/Arizona_State_University_Logo.png">
+                  <div class = "key-skills">
                     <strong>Key Skills: Geospatial Data Visualization | JavaScript & Leaflet.js | API Data Retrieval</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>Earthquake Data Visualization</h4>
+                <hr class = "modal-line">
+                <h4 class = "modal-header">Earthquake Data Visualization</h4>
+                <div class = "modal-text">
                 <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
                   This bootcamp project was developed to provide an interactive visualization of earthquake data collected by the United States Geological Survey (USGS). Using Leaflet.js, earthquake events are mapped based on real-time data, with visual indicators such as marker size and color representing earthquake magnitude and depth.
                 </p>
+              </div>
                 <div style="text-align: center; margin-top: 20px;">
                   <img src="img/earthquake_map.png" width="100%" style = "margin:0px;padding:0px">
                 </div>
-                <p style="background-color:gray;padding:5px;color:white;margin-top: 2px; padding:0px; text-align: center;">Screenshot of the interactive earthquake map</p>
+                <p class = "modal-text textbox">Screenshot of the interactive earthquake map</p>
                 <hr>
-                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/leaflet-challenge">GitHub</a>.</span>
+                <span class = "modal-text">The source code of the project is available on <a href="https://github.com/rjlaughlin/leaflet-challenge">GitHub</a>.</span>
                 <div style="margin-top: 10px;">
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://rjlaughlin.github.io/leaflet-challenge/">Live Visualization</a>
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/leaflet-challenge">GitHub</a>
@@ -686,15 +688,16 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/Arizona_State_University_Logo.png">
+                  <div class = "key-skills">
                     <strong>Key Skills: Python | Data Visualization | Geospatial Analysis</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>Natural Disasters Data Analysis</h4>
-                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                <hr class = "modal-line">
+                <h4 class = "modal-header">Natural Disasters Data Analysis</h4>
+                <div class = "modal-text">
+                <p style="color: #231f20; text-align: left; max-width: 800px; margin: auto;">
                   This bootcamp project analyzes natural disasters datasets, providing insights into the locations, frequency, and costs of such events. The analysis explores whether the frequency of natural disasters has increased over time using data visualization techniques.
                 </p>
                 <section id="key-questions" style = "margin-bottom: 20px;">
@@ -705,7 +708,8 @@
                       <li>Which areas are most affected by natural disasters?</li>
                       <li>What are the financial and human impacts of major disasters?</li>
                   </ul>
-              </section>
+                </section>
+                </div>
               <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; align-items: center;">
                 <img src="img/storms.png" width="100%" style = "margin-bottom: 0px;">
                 <img src="img/storms2.png" width="100%" style = "margin-bottom: 0px;">
@@ -713,15 +717,18 @@
                 <img src="img/storms4.png" width="100%" style = "margin-bottom: 0px;">
               </div>
 
+              
               <section id="key-findings">
-                <h5 style="margin-top:0px">Key Findings</h5>
+                <h5 class = "modal-header" style="margin-top:0px">Key Findings</h5>
+                    <div class = "modal-text">
                     <p style = "margin:0px"><strong>Rising Disaster Counts</strong>: The frequency of natural disasters, especially floods and storms, has increased over time.</p>
                     <p style = "margin:0px"><strong>High-Impact Regions</strong>: Brady, Texas, experienced the highest frequency of disasters from 1960–2018.</p>
                     <p style = "margin:0px"><strong>Cost vs. Duration</strong>: There is no significant correlation between disaster duration and economic impact.</p>
                     <p style = "margin:0px"><strong>Major Events</strong>: Hurricane Katrina incurred the highest economic cost ($200 billion), while Hurricane Maria had the highest death toll (2,981).</p>
+                    </div>
               </section>
               <hr>
-              <span style = "margin-top: 5px;">The source code of the project is available on <a href="https://github.com/andrewplane/project_one">GitHub</a>.</span>
+              <span class = "modal-text" style = "margin-top: 5px;">The source code of the project is available on <a href="https://github.com/andrewplane/project_one">GitHub</a>.</span>
                 <div style="margin-top: 2px;">
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/andrewplane/project_one">GitHub</a>
                 </div>
@@ -748,60 +755,64 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/Arizona_State_University_Logo.png">
+                  <div class = "key-skills">
                     <strong>Key Skills: Research | Statistical Analysis | Data Visualization & Presentation</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>The Comprehensive Analysis of Concussions</h4>
-                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                <hr class = "modal-line">
+                <h4 class = "modal-header">The Comprehensive Analysis of Concussions</h4>
+                <div class = "modal-text">
+                <p style="color: #231f20; text-align: left; max-width: 800px; margin: auto;">
                   This research paper analyzes the impact of concussions in the NFL, the evolution of rules aimed at player safety, and the broader societal consequences of traumatic brain injuries. Despite advancements in equipment and rule changes, concussions remain a prevalent issue in professional football.
                 </p>
+                </div>
                 <section id="key-questions" style = "margin-bottom: 20px;">
-                  <h5 style="margin-top:20px">Key Questions</h5>
+                  <h5 class = "modal-header" style="margin-top:20px">Key Questions</h5>
+                  <div class = "modal-text">
                   <ul style = "text-align: center;margin:0px">
                     <li>How do concussions affect NFL players in the short and long term?</li>
                     <li>What rule changes have been implemented to mitigate head injuries?</li>
                     <li>How effective are modern helmets in reducing concussion risks?</li>
                     <li>What are the societal and psychological consequences of repeated head trauma?</li>
                   </ul>
+                </div>
               </section>
-              
+              </div>
               <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; align-items: center; margin-top:40px;">
 
                 <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                  <img src="img/NFL_1.png" style="width: 100%; height: 250px; object-fit: contain;">
-                  <div style="background-color: gray; color: white; width: 90%; padding: 0px;">
+                  <img src="img/NFL_1.png" style="width: 100%;">
+                  <div class = "modal-text textbox" style="width: 90%; padding: 0px;">
                       <p style = "margin-bottom: 0px; padding-bottom: 0px;">Data for the number of concussions in the NFL was limited when I wrote this thesis.</p>
                   </div>
                 </div>
           
                 <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-                  <img src="img/NFL_2.png" style="width: 100%; height: 250px; object-fit: contain;">
-                  <div style="background-color: gray; color: white; width: 90%; padding: 0px;">
+                  <img src="img/NFL_2.png" style="width: 100%;">
+                  <div class = "modal-text textbox" style="width: 90%; padding: 0px;">
                       <p style = "margin-bottom: 0px; padding-bottom: 0px;">Updated chart to reflect latest concussion data.</p>
                   </div>
                 </div>
 
                 <div style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-top: 10px">
-                  <img src="img/NFL_3.png" style="width: 100%; height: 250px; object-fit: contain;">
-                  <div style="background-color: gray; color: white; width: 90%; padding: 0px;">
+                  <img src="img/NFL_3.png" style="width: 100%;">
+                  <div class = "modal-text textbox" style="width: 90%; padding: 0px;">
                     <p style = "margin-bottom: 0px; padding-bottom: 0px;">Deterioration of brain cells due to concussions</p>
                   </div>
                 </div>
 
                 <div style="text-align: center; display: flex; flex-direction: column; align-items: center;margin-top: 10px">
-                  <img src="img/NFL_4.png" style="width: 100%; height: 250px; object-fit: contain;">
-                  <div style="background-color: gray; color: white; width: 90%; padding: 0px;">
+                  <img src="img/NFL_4.png" style="width: 100%;">
+                  <div class = "modal-text textbox" style="width: 90%;">
                     <p style = "margin-bottom: 0px; padding-bottom: 0px;">History of football helmets, including the Guardian Cap. The NFL first mandated the use of Guardian Caps during the early portion of training camp in 2022. The NFL began allowing Guardian Caps in games during the 2024 season. The Guardian Cap is a soft-shell pad that attaches to the outside of a football helmet to reduce the impact of blows to the head.</p>
                   </div>
                   </div>
               </div>
               <section id="key-findings">
-                <h5 style="margin-top:40px">Key Findings</h5>
-                    <div style = "margin:0px; white-space:nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150%;font-size: smaller; display: block; justify-content: center; align-items: center;">
+                <h5 class = "modal-header" style="margin-top:clamp(10px,2.083vw,40px)">Key Findings</h5>
+                    <div class = "modal-text" style = "margin:0px; white-space:nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150%;font-size: smaller; display: block; justify-content: center; align-items: center;">
                       <p style = "margin:0px;"><strong>High Impact Speeds</strong>: Concussed players experience head impacts at an average of 20.8 mph, with head acceleration forces reaching 98 g’s.</p>
                       <p style = "margin:0px;"><strong>Frequent Head Collisions</strong>: Approximately 60% of NFL collisions are head-to-head, contributing to high concussion rates.</p>
                       <p style = "margin:0px;"><strong>Helmet Effectiveness</strong>: Virginia Tech research suggests modern helmets reduce concussion risks by 45-96%, though concussions remain common.</p>
@@ -809,7 +820,7 @@
                     </div>
               </section>
               <hr>
-              <h5>Resources</h5>
+              <h5 class = "modal-header">Resources</h5>
                 <div style="margin-top: 2px;">
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://keep.lib.asu.edu/items/136446">Full Paper</a>
                 </div>
@@ -837,23 +848,25 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/Arizona_State_University_Logo.png">
+                  <div class = "key-skills">
                     <strong>Key Skills: Data Visualization | D3.js & Plotly.js | Interactive Dashboards</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>Belly Button Biodiversity Dashboard</h4>
+                <hr class = "modal-line">
+                <h4 class = "modal-header">Belly Button Biodiversity Dashboard</h4>
+                <div class = "modal-text">
                 <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
                   This bootcamp project is an interactive dashboard that explores the Belly Button Biodiversity dataset, cataloging microbial species found in human navels. Using D3.js and Plotly.js, the dashboard provides insights into microbial diversity, showing the most prevalent and rare species across individuals.
                 </p>
-                <div style="text-align: center; margin-top: 20px;">
+              </div>
+                <div style="text-align: center; margin-top: clamp(5px,1.04vw,20px);">
                   <img src="img/bb_dash.gif" width="100%">
                 </div>
-                <p style="background-color:gray;padding:5px;color:white;margin-top: 5px; text-align: center;">Screenshot of the interactive biodiversity dashboard</p>
+                <p class = "modal-text textbox"> The interactive biodiversity dashboard in action</p>
                 <hr>
-                <span>The source code of the project is available on <a href="https://github.com/rjlaughlin/belly-button-challenge">GitHub</a>.</span>
+                <span class = "modal-text">The source code of the project is available on <a href="https://github.com/rjlaughlin/belly-button-challenge">GitHub</a>.</span>
                 <div style="margin-top: 10px; padding: 5px;">
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://rjlaughlin.github.io/belly-button-challenge/">Dashboard</a>
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/belly-button-challenge">GitHub</a>
