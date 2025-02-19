@@ -426,7 +426,7 @@ body {
 
 .modal-text.textbox {
   all: unset; /* Resets inherited styles */
-  font-size: 5px;
+  font-size: 5px !important;
 }
 
 .btn-secondary {
@@ -449,12 +449,12 @@ body.modal-open {
 
 .portfolio-modal .close-modal {
   position: absolute;
-  top: 10px !important;  /* Move closer to the top */ 
-  right: 20px !important; /* Move closer to the right */
-  width: 25px !important;  /* Reduce size */
-  height: 25px !important; /* Reduce size */
+  top: 0px !important;
+  right: 10px !important;
+  width: 50px !important;  /* Increase clickable area */
+  height: 50px !important; /* Increase clickable area */
   cursor: pointer;
-  background-color: transparent;
+  background-color: transparent !important;
   z-index: 9999; /* Ensure it's above everything */
   display: flex;
   align-items: center;
