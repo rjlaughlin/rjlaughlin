@@ -258,7 +258,7 @@
                 </ul>
                 <p style = "margin-top:0; margin-bottom:0.78125vw;">Data sources include CoinMarketCap for historical Bitcoin prices and Fidelity for ETF data.</p>
                 <p style = "margin-top:0; margin-bottom:0.78125vw;">The dashboard features several key visualizations:</p>
-                <ul style = "margin-top:0; margin-bottom:0.78125vw;">
+                <ul style = "text-align: center; margin-top:0; margin-bottom:0.78125vw;">
                   <li><strong>Bitcoin Price Over Time:</strong> Tracks Bitcoin’s price with adjustable time units (days, months, or years).</li>
                   <li><strong>Dollar Change vs. Percentage Change Heatmap:</strong> Displays Bitcoin’s volatility based on different timeframes.</li>
                   <li style = "margin-top:0; margin-bottom:0.78125vw;"><strong>Google Trends Bitcoin Search Interest:</strong> Visualizes Bitcoin-related search activity across U.S. states.</li>
@@ -268,14 +268,14 @@
               <div style="display: flex; justify-content: space-between; gap: 0.52vw;">
                 <div style="position: relative; width: 37.5%;">
                   <img src="img/filled_bitcoin.gif" style="background-color:black; width: 100%; max-width: 300px;">
-                  <p class="modal-text textbox" style="background-color:gray;padding:5px;color:white;">I generated a GIF using Python that fills the Bitcoin logo.</p>
+                  <p class="modal-text textbox">I generated a GIF using Python that fills the Bitcoin logo.</p>
                 </div>
                 <img src="img/bitcoin_dashboard.png" style="width: 62.5%; max-width: 500px;">
               </div>
                 <div style="text-align: center; margin-top: 0.52vw;">
                   <img src="img/bitcoin_volatility.png" width="100%">
                 </div>
-                <p class = "modal-text textbox" style="background-color:gray;padding:0.26vw;color:white;margin-top: 0.26vw;" width="36.46vw">Chart plotting Bitcoin and Bitcoin ETF price changes</p>
+                <p class = "modal-text textbox" width="36.46vw">Chart plotting Bitcoin and Bitcoin ETF price changes</p>
                 <hr>
                 <span class = "modal-text">The source code of the project is available on <a href="https://github.com/Cmagor1819/team-7-project3">GitHub</a>.</span>
                 <div style="margin-top: 0.26vw;">
@@ -447,12 +447,12 @@
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(5px,1.04vw,20px); align-items: center; margin-top: clamp(10px,2.08vw,40px);">
                   <div style="display: flex; flex-direction: column; align-items: center;">
                     <img src="img/Picture5.png" width="100%" style = "margin-bottom: 0px;">
-                    <p class = "modal-text textbox" style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 90%;">Custom userform to select a specific ECN.
+                    <p class = "modal-text textbox" style= "width: 90%;">Custom userform to select a specific ECN.
                     </p>
                   </div>
                   <div style="display: flex; flex-direction: column; align-items: center;">
                     <img src="img/Picture6.png" width="100%" style = "margin-bottom: 0px;">
-                    <p class = "modal-text textbox" style="background-color:gray;padding:5px;color:white;margin-top: 2px; text-align: center; width: 90%;">SQL code to query the Fishbowl management 
+                    <p class = "modal-text textbox" style="width: 90%;">SQL code to query the Fishbowl management 
                       system on existing part numbers.</p>
                   </div>
                 </div>
@@ -521,14 +521,14 @@
                   <div style="display: flex; flex-direction: column; gap: 0px;">
                       <div style="text-align: center;">
                           <img src="img/QMS_1.png" style="width: 100%; border: 1px solid black; margin:0px;padding:0px">
-                          <div class = "modal-text" style="background-color: gray; color: white; margin:0px;padding:0px">
+                          <div class = "modal-text textbox">
                               <p>Initial view of the quality log</p>
                           </div>
                       </div>
               
                       <div style="text-align: center;">
                           <img src="img/QMS_2.jpg" style="width: 100%; border: 1px solid black;margin:0px;padding:0px">
-                          <div class = "modal-text" style="background-color: gray; color: white; margin:0px;padding:0px">
+                          <div class = "modal-text textbox">
                               <p>Chart detailing open vs. closed issues</p>
                           </div>
                       </div>
@@ -537,7 +537,7 @@
                   <!-- Right Side (One Large Image) -->
                   <div style="text-align: center;">
                       <img src="img/QMS_3.png" style="width: 100%; height: 100%; object-fit: cover; border: 1px solid black;margin:0px;padding:0px">
-                      <div class = "modal-text" style="background-color: gray; color: white; margin:0px;padding:0px">
+                      <div class = "modal-text textbox">
                           <p>Final 8D Form</p>
                       </div>
                   </div>
@@ -579,17 +579,19 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <div style="display: flex; justify-content: space-between; align-items: center; height: 30px; margin-top:0; margin-bottom:0px;">
-                  <img src="img/Arizona_State_University_Logo.png" width="200px" style="align-self: center; margin-top:10px; margin-bottom:10px;">
-                  <div style="display: flex; align-items: center; text-align: right;">
+                <div class = "header-container">
+                  <img class = "logo" src="img/Arizona_State_University_Logo.png">
+                  <div class = "key-skills">
                     <strong>Key Skills: Data Visualization | Tableau | Geospatial Analysis</strong>
                   </div>
                 </div>
-                <hr style="border: 3px solid #231f20;">
-                <h4>Citi Bike Ride Analysis (Nov 2024 - Jan 2025)</h4>
-                <p style="font-size: 17px; color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                <hr class = "modal-line">
+                <h4 class = "modal-header">Citi Bike Ride Analysis (Nov 2024 - Jan 2025)</h4>
+                <div class = "modal-text">
+                <p style="color: #231f20; text-align: left; max-width: 800px; margin: auto;">
                   This bootcamp project analyzes New York's Citi Bike program data over a three-month period, uncovering key insights into ride distribution, peak usage, and station popularity. Using Tableau, interactive visualizations highlight rider behavior and trends to inform city officials on optimizing the bike-sharing system.
                 </p>
+              </div>
                 <div style="text-align: center; margin-top: 10px;">
                   <img src="img/citibike_1.png" width="100%">
                 </div>
@@ -599,17 +601,19 @@
                 <div style="text-align: center; margin-top: 5px;">
                   <img src="img/citibike_3.png" width="100%">
                 </div>
-                <p style="background-color:gray;padding:5px;color:white;margin-top: 5px; text-align: center;">Screenshot of Citi Bike analysis story</p>
+                <p class = "modal-text textbox">Screenshot of Citi Bike analysis story</p>
                 <hr>
-                <h5 style = "margin-top:10px;text-decoration: underline;">Key Findings</h5>
+                <h5 class = "modal-header" style = "margin-top:10px;text-decoration: underline;">Key Findings</h5>
+                <div class = "modal-text">
                 <ul style="text-align: left; max-width: 800px; margin-top: 5px; margin: auto;">
                   <li><strong>Ride Distribution:</strong> Most trips began and ended in Manhattan, with end locations more dispersed, indicating diverse rider destinations.</li>
                   <li><strong>Peak Hours:</strong> 5 PM saw the highest ride volume, followed by 6 PM and 4 PM, suggesting post-work commute trends.</li>
                   <li><strong>High-Ridership Days:</strong> November 1st and December 17th recorded the most rides.</li>
                   <li><strong>Popular Stations:</strong> Central Park was a top round-trip destination, while W 21st St & 6th Ave had the highest ride completions.</li>
                 </ul>
+              </div>
                 <hr>
-                <span style = "margin-top: 5px;">The source data is publicly available on the <a href="https://www.citibikenyc.com/system-data">Citi Bike Data Portal</a>.</span>
+                <span class = "modal-text" style = "margin-top: 5px;">The source data is publicly available on the <a href="https://www.citibikenyc.com/system-data">Citi Bike Data Portal</a>.</span>
                 <div style="margin-top: 2px;">
                   <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://public.tableau.com/profile/rjlaughlin">Tableau Story</a>
                 </div>

@@ -425,7 +425,6 @@ body {
 }
 
 .modal-text.textbox {
-  all: unset; /* Resets inherited styles */
   font-size: 5px !important;
 }
 
@@ -570,6 +569,15 @@ body.modal-open {
 
   .modal-text {
     margin-bottom: 15px;
+  }
+
+  .modal-text.textbox {
+    background-color:gray;
+    color:white;
+    padding:0.26vw;
+    margin-top: 0px;
+    text-align: center
+    
   }
 /* -------------------- CLOSING MODAL ------------------ */
 
