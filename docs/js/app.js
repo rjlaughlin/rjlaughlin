@@ -10,6 +10,25 @@ $(document).on("click", ".close-modal", function () {
 });
 
 
+$(document).ready(function () {
+  function isMobile() {
+    return window.innerWidth <= 768; // Adjust this value for your breakpoint
+  }
+
+  $(".portfolio-modal").on("hidden.bs.modal", function () {
+    if (isMobile()) {
+      $(".close-modal").prop("disabled", false);
+      $(".close-modal").css("pointer-events", "auto");
+    }
+  });
+
+  $(".portfolio-modal").on("shown.bs.modal", function () {
+    if (isMobile()) {
+      $(".close-modal").show();
+    }
+  });
+});
+
 // function for buttons
 
 $(function () {

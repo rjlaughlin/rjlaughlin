@@ -420,13 +420,27 @@ body {
 }
 
 .modal-text {
-  font-size: 10px !important;
+  font-size: 8px !important;
   margin-bottom: 0.78125vw !important;
 }
 
 .btn-secondary {
   font-size: 12px !important;
 }
+
+.portfolio-modal .modal-content {
+  max-height: 85vh; /* Adjusts height to ensure scrolling works */
+  overflow-y: auto; /* Enables scrolling */
+  -webkit-overflow-scrolling: touch; /* Improves touch scrolling on iOS */
+}
+
+/* Prevent body from scrolling when modal is open */
+body.modal-open {
+  overflow: hidden;
+  height: 100%;
+  touch-action: none; /* Prevents unintended touch gestures */
+}
+
 
 .portfolio-modal .close-modal {
   position: absolute;
@@ -453,14 +467,6 @@ body {
   height: 12.5px !important;
 }
 
-/* Style the 'X' icon inside */
-.portfolio-modal .close-modal::before {
-  content: "✖"; /* Unicode for 'X' */
-  font-size: 24px;
-  color: black;
-}
-
-
 }
 
 /* -------------------- MODAL ------------------ */
@@ -471,7 +477,11 @@ body {
   /* margin: 3rem; */
   width: 85vw;
   max-height: 90vh;
-  overflow-y: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 @media (min-width: 1000px) {
   .portfolio-modal .modal-dialog {
