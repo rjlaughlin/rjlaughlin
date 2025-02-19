@@ -445,9 +445,9 @@ body.modal-open {
 .portfolio-modal .close-modal {
   position: absolute;
   top: 5px !important;  /* Move closer to the top */ 
-  right: 37.5px !important; /* Move closer to the right */
-  width: 12.5px !important;  /* Reduce size */
-  height: 12.5px !important; /* Reduce size */
+  right: 45px !important; /* Move closer to the right */
+  width: 15px !important;  /* Reduce size */
+  height: 15px !important; /* Reduce size */
   cursor: pointer;
   background-color: transparent;
   z-index: 9999; /* Ensure it's above everything */
@@ -458,13 +458,13 @@ body.modal-open {
 
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
-  height: 12.5px !important;
+  height: 15px !important;
   margin-left: 0px;
 }
 
 .portfolio-modal .close-modal .lr .rl {
   /* Safari and Chrome */
-  height: 12.5px !important;
+  height: 15px !important;
 }
 
 }
