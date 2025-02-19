@@ -424,6 +424,11 @@ body {
   margin-bottom: 0.78125vw !important;
 }
 
+.modal-text.textbox {
+  all: unset; /* Resets inherited styles */
+  font-size: 5px;
+}
+
 .btn-secondary {
   font-size: 12px !important;
 }
@@ -444,10 +449,10 @@ body.modal-open {
 
 .portfolio-modal .close-modal {
   position: absolute;
-  top: 5px !important;  /* Move closer to the top */ 
-  right: 45px !important; /* Move closer to the right */
-  width: 15px !important;  /* Reduce size */
-  height: 15px !important; /* Reduce size */
+  top: 10px !important;  /* Move closer to the top */ 
+  right: 25px !important; /* Move closer to the right */
+  width: 20px !important;  /* Reduce size */
+  height: 20px !important; /* Reduce size */
   cursor: pointer;
   background-color: transparent;
   z-index: 9999; /* Ensure it's above everything */
@@ -458,13 +463,13 @@ body.modal-open {
 
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
-  height: 15px !important;
+  height: 20px !important;
   margin-left: 0px;
 }
 
 .portfolio-modal .close-modal .lr .rl {
   /* Safari and Chrome */
-  height: 15px !important;
+  height: 20px !important;
 }
 
 }
