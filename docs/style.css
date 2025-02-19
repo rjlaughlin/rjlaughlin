@@ -450,9 +450,9 @@ body.modal-open {
 .portfolio-modal .close-modal {
   position: absolute;
   top: 10px !important;  /* Move closer to the top */ 
-  right: 25px !important; /* Move closer to the right */
-  width: 20px !important;  /* Reduce size */
-  height: 20px !important; /* Reduce size */
+  right: 20px !important; /* Move closer to the right */
+  width: 25px !important;  /* Reduce size */
+  height: 25px !important; /* Reduce size */
   cursor: pointer;
   background-color: transparent;
   z-index: 9999; /* Ensure it's above everything */
@@ -463,13 +463,13 @@ body.modal-open {
 
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
-  height: 20px !important;
+  height: 25px !important;
   margin-left: 0px;
 }
 
 .portfolio-modal .close-modal .lr .rl {
   /* Safari and Chrome */
-  height: 20px !important;
+  height: 25px !important;
 }
 
 }
