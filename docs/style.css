@@ -490,11 +490,17 @@ body.modal-open {
 @media (min-width: 1000px) {
   .portfolio-modal .modal-dialog {
     min-width: 70vw;
+    align-items: flex-start !important;
+    overflow: auto;
+    overflow-y: auto;
   }
 }
 @media (min-width: 1800px) {
   .portfolio-modal .modal-dialog {
     max-width: 40vw;
+    align-items: flex-start !important;
+    overflow: auto;
+    overflow-y: auto;
   }
 }
 
