@@ -371,10 +371,21 @@ body {
   }
 
   #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    font-size: clamp(12px,1.146vw,22px);
+    font-size: 8px;
     position: absolute;
     
   }
+
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content .explanation_portfolio {
+    margin: 0px;
+    
+  }
+
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content .hover-line {
+    margin: 0px;
+    
+  }
+
   .modal {
     overflow-y: auto !important;
   }
@@ -405,7 +416,6 @@ body {
 .logo {
     height: 50%; /* Adjust width dynamically */
     max-width: 100px; /* Cap the size */
-    max-height: 65px;
 }
 
 .modal-header {
