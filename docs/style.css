@@ -371,7 +371,7 @@ body {
   }
 
   #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    font-size: 1.146vw;
+    font-size: clamp(12px,1.146vw,22px);
     position: absolute;
     
   }
@@ -405,6 +405,7 @@ body {
 .logo {
     height: 50%; /* Adjust width dynamically */
     max-width: 100px; /* Cap the size */
+    max-height: 85px;
 }
 
 .modal-header {
