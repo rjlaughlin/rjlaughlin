@@ -405,7 +405,7 @@ body {
 .logo {
     height: 50%; /* Adjust width dynamically */
     max-width: 100px; /* Cap the size */
-    max-height: 85px;
+    max-height: 65px;
 }
 
 .modal-header {
@@ -443,6 +443,19 @@ body {
   max-height: 85vh; /* Adjusts height to ensure scrolling works */
   overflow-y: auto; /* Enables scrolling */
   -webkit-overflow-scrolling: touch; /* Improves touch scrolling on iOS */
+}
+
+.portfolio-modal .modal-content ul {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0; /* Remove default left padding */
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 /* Prevent body from scrolling when modal is open */
@@ -497,6 +510,7 @@ body.modal-open {
 @media (min-width: 777px) {
   .portfolio-modal .modal-dialog {
     min-width: 70vw;
+    max-height: 95vh;
     align-items: flex-start !important;
     overflow: auto !important;
     overflow-y: auto !important;
@@ -505,6 +519,7 @@ body.modal-open {
 @media (min-width: 1800px) {
   .portfolio-modal .modal-dialog {
     max-width: 40vw;
+    max-height: 95vh;
     align-items: flex-start !important;
     overflow: auto !important;
     overflow-y: auto !important;
@@ -529,14 +544,6 @@ body.modal-open {
   font-style: italic;
   margin: 20px 0 30px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.portfolio-modal .modal-content ul {
-  list-style-position: inside;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 0; /* Remove default left padding */
 }
 
 .portfolio-modal .modal-content ul.list-inline {
