@@ -17,7 +17,7 @@ This repository contains my portfolio of data and design projects, showcasing my
 ---
 
 ## 📚 Projects  
-Check out my portfolio for a deeper look at my work: [http://www.rjlaughlin.com/](https://rjlaughlin.com/)  
+Check out my portfolio for a deeper look at my work: [https://www.rjlaughlin.com/](https://rjlaughlin.com/)  
 
 ## 🎯 Areas of Expertise  
 ✔ Data Analysis & Reporting  
