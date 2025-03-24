@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Riley Laughlin | From Engineering to Analytics</title>
   <link href="portfolio/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -16,9 +17,10 @@
 <div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
   <div style="font-size: clamp(12px,1.04vw,20px); font-weight: bold;">R. Laughlin</div>
   <div>
-    <a href="/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">ABOUT</a>
+    <a href="/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">HOME</a>
+    <a href="/about/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">ABOUT</a>
     <a href="/portfolio/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">PORTFOLIO</a>
-    <a href="/#" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)" onclick="sendEmail()">CONTACT</a>
+    <a href="/contact/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">CONTACT</a>
   </div>
 </div>
 
@@ -31,15 +33,30 @@
 <div style="text-align: center;">
   <h2 style="font-size: clamp(28px, 1.875vw, 36px); font-weight: bold; font-family: 'Segoe UI', sans-serif; margin-bottom: 0.26vw; text-transform: uppercase;">Riley Laughlin</h2>
   <div style="font-size: clamp(22px, 1.46vw, 28px); font-weight: none; font-family: 'Segoe UI', sans-serif;margin-top: 0;">From Engineering to Analytics</div>
-  <!-- Social Media Links -->
-  <div style="margin-top: 10px; margin-bottom: 20px">
-    <a href="https://www.linkedin.com/in/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn" style="width: clamp(30px,2.08vw,40px); height: clamp(30px,2.08vw,40px); filter: invert(100%) grayscale(100%) brightness(200%);">
-    </a>
-    <a href="https://github.com/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/450px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" style="width: clamp(30px,2.08vw,40px); height: clamp(30px,2.08vw,40px); filter: invert(100%) grayscale(100%) brightness(200%);">
-    </a>
+
+<!-- Reset to One-Column Layout -->
+<div class="single-column">
+  <div class="button-row">
+  <div class="button-container">
+    <img src="portfolio/img/person.png" alt="Portfolio Icon" class="button-icon">
+    <a href="/portfolio/" class="main-link" id="portfolio-link">ABOUT ME</a>
+  </div>  
+
+  <div class="button-container">
+    <img src="portfolio/img/business-presentation.png" alt="Portfolio Icon" class="button-icon">
+    <a href="/portfolio/" class="main-link" id="portfolio-link">PORTFOLIO</a>
   </div>
+
+
+  <div class="button-container">
+    <img src="portfolio/img/contact.png" alt="Portfolio Icon" class="button-icon">
+    <a href="/contact/" class="main-link" id="portfolio-link">CONTACT</a>
+  </div>
+  
+  </div>
+</div>
+
+<hr style="width: 75%; height: 3px; background-color: white; border: none; margin: 30px auto">
 
 <!-- Two-Column Section -->
 <div class="two-column">
@@ -64,38 +81,7 @@
 
 </div>
 
-
-<!-- Reset to One-Column Layout -->
-<div class="single-column">
-  <div style="margin-top: 0.78vw; position: relative; display: inline-block;">
-    <div id="arrow" class="arrow">
-      <svg width="30" height="35" viewBox="0 0 24 60" fill="none" stroke="#c32aff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 3v45M19 30l-7 20-7-20"/>
-      </svg>
-    </div>
-    <a href="/portfolio/" class="main-link" id="portfolio-link">PORTFOLIO</a>
-  </div>
-  <a href="#" class="main-link" onclick="sendEmail()">CONTACT</a>
-</div>
-
-<style>
-  .arrow {
-    position: absolute;
-    left: 50%;
-    bottom: 100%;
-    transform: translateX(-50%);
-    font-size: 30px;
-    color: #c32aff;
-    animation: bounce 1s infinite alternate;
-  }
-
-  @keyframes bounce {
-    0% { transform: translateX(-50%) translateY(0); }
-    100% { transform: translateX(-50%) translateY(-10px); }
-  }
-</style>
-
-<script>
+<!-- <script>
 
   function sendEmail() {
     window.location.href = "mailto:riley.laughlin@cox.net?subject=Let's%20Connect!&body=Hi%20Riley,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0AThanks,%0A[Your%20Name]";
@@ -115,8 +101,33 @@
       arrow.style.display = "none"; // Hide arrow on click
     });
   });
-</script>
+</script> -->
   
+<footer class="footer-nav">
+  <div class="footer-container">
+      <nav class="footer-menu">
+          <ul class="nav-menu">
+              <li class="menu-item"><a href="/" class="menu-link">HOME</a></li>
+              <li class="menu-item"><a href="/about/" class="menu-link">ABOUT</a></li>
+              <li class="menu-item"><a href="/portfolio/" class="menu-link">PORTFOLIO</a></li>
+              <li class="menu-item"><a href="/contact/" class="menu-link">CONTACT</a></li>
+          </ul>
+      </nav>
+      <div style="margin: 10px">
+        <a href="https://www.linkedin.com/in/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn" style="width: clamp(30px,2.08vw,40px); height: clamp(30px,2.08vw,40px); filter: invert(100%) grayscale(100%) brightness(200%);">
+        </a>
+        <a href="https://github.com/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/450px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" style="width: clamp(30px,2.08vw,40px); height: clamp(30px,2.08vw,40px); filter: invert(100%) grayscale(100%) brightness(200%);">
+        </a>
+      </div>
+      <div class="footer-copyright">
+          Copyright © 2025 <span class="footer-site-title">Riley Laughlin</span>
+      </div>
+  </div>
+</footer>
+
+
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="portfolio/js/app.js"></script>

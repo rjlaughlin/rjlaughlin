@@ -21,9 +21,10 @@ I have modified the content and styling to reflect my own work and portfolio.-->
 <div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
   <div style="font-size: clamp(12px,1.04vw,20px); font-weight: bold;">R. Laughlin</div>
   <div>
-    <a href="/" style = "font-size: clamp(9px,0.83vw,16px)" class="nav-link">ABOUT</a>
-    <a href="/portfolio/" style = "font-size: clamp(9px,0.83vw,16px)" class="nav-link">PORTFOLIO</a>
-    <a href="/#" style = "font-size: clamp(9px,0.83vw,16px)" class="nav-link">CONTACT</a>
+    <a href="/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">HOME</a>
+    <a href="/about/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">ABOUT</a>
+    <a href="/portfolio/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">PORTFOLIO</a>
+    <a href="/contact/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">CONTACT</a>
   </div>
 </div>
 
@@ -986,15 +987,30 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 </section>
 
 
-
-
-<!-- Reset to One-Column Layout -->
-<div class="single-column">
-  <div style="margin-top: 15px;">
-    <a href="index.html" class="main-link">ABOUT</a>
-    <a href="#" class="main-link" onclick="sendEmail()">CONTACT</a>
+<footer class="footer-nav">
+  <div class="footer-container">
+      <nav class="footer-menu">
+          <ul class="nav-menu">
+              <li class="menu-item"><a href="/" class="menu-link">HOME</a></li>
+              <li class="menu-item"><a href="/about/" class="menu-link">ABOUT</a></li>
+              <li class="menu-item"><a href="/portfolio/" class="menu-link">PORTFOLIO</a></li>
+              <li class="menu-item"><a href="/contact/" class="menu-link">CONTACT</a></li>
+          </ul>
+      </nav>
+      <div style="margin: 10px">
+        <a href="https://www.linkedin.com/in/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn" style="width: clamp(30px,2.08vw,40px); height: clamp(30px,2.08vw,40px); filter: invert(100%) grayscale(100%) brightness(200%);">
+        </a>
+        <a href="https://github.com/rjlaughlin/" target="_blank" style="display: inline-block; margin: 0 10px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/450px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" style="width: clamp(30px,2.08vw,40px); height: clamp(30px,2.08vw,40px); filter: invert(100%) grayscale(100%) brightness(200%);">
+        </a>
+      </div>
+      <div class="footer-copyright">
+          Copyright © 2025 <span class="footer-site-title">Riley Laughlin</span>
+      </div>
   </div>
-</div>
+</footer>
+
 
 <script>
   function sendEmail() {

@@ -54,6 +54,7 @@ body {
   gap: 2vw; /* Adds spacing between text and image */
   width: 80vw; /* Keeps content from stretching too wide */
   max-width: 1200px; /* Prevents excessive width */
+  margin-bottom: 50px !important;
   margin: 0 auto; /* Ensures centering within the page */
 }
 
@@ -180,9 +181,9 @@ body {
 .main-link {
   border: 0.26vw solid white; /* Thick white border */
   padding: 0.52vw 1.04vw; 
-  margin: 0.26vw 1.04vw 2.6vw 1.04vw !important;
+  margin: 0 !important;
   display: inline-block;
-  background-color: transparent; /* Transparent background */
+  background-color: #c32aff; /* Transparent background */
   color: white; /* White text */
   text-decoration: none;
   font-weight: bold;
@@ -193,8 +194,8 @@ body {
 }
 
 .main-link:hover {
-  border: 5px solid #c32aff;
-  color: #c32aff;
+  /* border: 5px solid #c32aff; */
+  background-color: rgb(95,37,159);
   text-decoration: underline;
 }
 
@@ -254,6 +255,72 @@ body {
   color: white;
 }
 
+.button-row {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  gap: 0px; /* Adds space between buttons */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Forces image above the button */
+  align-items: center; /* Centers image and button */
+  text-align: center;
+  margin: 0 !important;  /* Ensure no extra space around button containers */
+  padding: 0 80px;
+  gap: 0px !important;
+}
+
+.button-icon {
+  width: clamp(120px,9.375vw,180px);
+  height: auto;
+  filter: invert(100%) grayscale(100%) brightness(200%);
+  margin-bottom: 20px
+}
+
+
+.footer-nav {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 0 10px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-menu .nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-menu .menu-item {
+  display: inline;
+}
+
+.footer-menu .menu-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-menu .menu-link:hover {
+  color: #f39c12;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+
 
 
 #portfolio .portfolio-item {
@@ -264,7 +331,7 @@ body {
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin: 0 ;
   cursor: pointer;
   border-radius: 10px; /* Match image border-radius */
   overflow: hidden; /* Ensures images don’t spill outside rounded corners */
@@ -657,4 +724,80 @@ body.modal-open {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: #212529;
+}
+
+
+.elementor-section {
+  display: flex;
+  width: 50%;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centers the block horizontally */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.elementor-container {
+  width: 100%;
+}
+
+.elementor-field-group {
+  margin-bottom: 15px;
+}
+
+.elementor-field-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.elementor-field {
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  
+}
+
+.elementor-button {
+  background-color: #c32aff;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.elementor-button:hover {
+  background-color: rgb(95,37,159);
+}
+
+
+.elementor-form-fields-wrapper {
+  width: 100%; /* Ensures the wrapper fills its container */
+  display: flex;
+  flex-direction: column; /* Stack fields and button properly */
+  align-items: stretch; /* Ensure full width usage */
+}
+
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: fadeInUp 0.6s ease-out;
 }
