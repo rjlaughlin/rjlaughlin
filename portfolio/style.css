@@ -820,7 +820,7 @@ body.modal-open {
 .elementor-section {
   display: flex;
   box-sizing: border-box;
-  width: 100%; /* Adjust to 100% for full width of the section */
+  width: 50%; /* Adjust to 100% for full width of the section */
   background: transparent;
   justify-content: center;
   align-items: center;
