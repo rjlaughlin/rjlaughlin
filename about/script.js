@@ -10,6 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(`Button Clicked: ${this.textContent}`);
             console.log(`Modal ID: ${modalId}`);
             
+            // Check if modal already exists in the DOM
+            let existingModal = document.getElementById(modalId);
+            if (existingModal) {
+                console.log(`Modal ${modalId} already exists. Showing existing modal.`);
+                let existingModalInstance = new bootstrap.Modal(existingModal);
+                existingModalInstance.show();
+                return; // Stop fetching again
+            }
+
             // Fetch the portfolio page where the modal exists
             fetch("../portfolio/index.html")
                 .then(response => {
@@ -26,23 +35,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (modalContent) {
                         console.log("Modal Found ✅");
 
-                        // Remove any existing modal to prevent duplicates
-                        let existingModal = document.getElementById(modalId);
-                        if (existingModal) {
-                            existingModal.remove();
-                        }
-
                         // Append the modal directly to the <body>
                         document.body.insertAdjacentHTML("beforeend", modalContent.outerHTML);
                         
-                        // Initialize Bootstrap Modal
                         let newModal = document.getElementById(modalId);
-                        let modal = new bootstrap.Modal(newModal);
-                        modal.show();
+                        let modalInstance = new bootstrap.Modal(newModal);
+                        modalInstance.show();
                         console.log("Modal Displayed ✅");
 
-                        // 🔥 Apply Portfolio Modal Behaviors (From Portfolio.js)
-                        syncPortfolioModalBehavior(newModal);
+                        // 🔥 Ensure modal is removed after closing
+                        newModal.addEventListener("hidden.bs.modal", function () {
+                            console.log(`Removing modal ${modalId} from DOM...`);
+                            setTimeout(() => {
+                                newModal.remove();
+                                console.log(`Modal ${modalId} successfully removed ✅`);
+                            }, 300);
+                        }, { once: true });
 
                     } else {
                         console.error("❌ Modal not found in portfolio page.");
@@ -52,52 +60,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-/**
- * ✅ Syncs behaviors from Portfolio.js to dynamically added modals
- */
-function syncPortfolioModalBehavior(modal) {
-    console.log("Syncing Portfolio Modal Behaviors...");
-
-    // Handle navbar hiding when modal opens
-    modal.addEventListener("show.bs.modal", function () {
-        document.querySelector(".navbar").classList.add("d-none");
-        document.body.classList.add("modal-open");
-    });
-
-    modal.addEventListener("hidden.bs.modal", function () {
-        document.querySelector(".navbar").classList.remove("d-none");
-        document.body.classList.remove("modal-open");
-    });
-
-    // Handle close button click
-    modal.querySelector(".close-modal").addEventListener("click", function () {
-        let bsModal = bootstrap.Modal.getInstance(modal);
-        bsModal.hide();
-    });
-
-    // Handle mobile close button styling
-    modal.addEventListener("shown.bs.modal", function () {
-        if (window.innerWidth <= 768) {
-            document.querySelectorAll(".close-modal").forEach(button => button.style.display = "block");
-        }
-    });
-
-    modal.addEventListener("hidden.bs.modal", function () {
-        if (window.innerWidth <= 768) {
-            document.querySelectorAll(".close-modal").forEach(button => {
-                button.disabled = false;
-                button.style.pointerEvents = "auto";
-            });
-        }
-    });
-
-    // Enable scrolling inside modal
-    let modalContent = modal.querySelector(".modal-content");
-    if (modalContent) {
-        modalContent.addEventListener("touchmove", function (e) {
-            e.stopPropagation(); // Keeps scrolling inside the modal
-        });
-        modalContent.style.overflowY = "auto"; // Ensure modal can scroll
-    }
-}

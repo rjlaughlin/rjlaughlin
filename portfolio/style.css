@@ -272,10 +272,10 @@ body {
 }
 
 .button-icon {
-  width: clamp(120px,9.375vw,180px);
+  width: 180px;
   height: auto;
   filter: invert(100%) grayscale(100%) brightness(200%);
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 
@@ -568,6 +568,20 @@ body.modal-open {
   height: 25px !important;
 }
 
+/* MAIN PAGE -BUTTON ICONS */
+.button-icon {
+  width: clamp(80px,9.375vw,180px);
+  margin-bottom: clamp(2px,1.04vw,20px);
+}
+
+
+/* CONTACT PAGE - MOBILE */
+.elementor-section {
+  width: 80%;
+}
+
+
+
 }
 
 /* -------------------- MODAL ------------------ */
@@ -729,6 +743,7 @@ body.modal-open {
 
 .elementor-section {
   display: flex;
+  box-sizing: border-box;
   width: 50%;
   background: transparent;
   justify-content: center;
@@ -745,6 +760,7 @@ body.modal-open {
 
 .elementor-field-group {
   margin-bottom: 15px;
+  width: 100% !important;
 }
 
 .elementor-field-label {
@@ -756,6 +772,7 @@ body.modal-open {
 .elementor-field {
   width: 100%;
   max-width: 100%;
+  min-width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -764,14 +781,16 @@ body.modal-open {
 }
 
 .elementor-button {
+  display: block;
   background-color: #c32aff;
   color: white;
   padding: 10px;
-  border: none;
   width: 100%;
-  max-width: 100%;
   border-radius: 4px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .elementor-button:hover {
@@ -807,6 +826,7 @@ body.modal-open {
   margin: 20px auto; /* Centers the section horizontally */
   padding: 20px;
   text-align: left;
+  color: white;
 }
 
 .job {
