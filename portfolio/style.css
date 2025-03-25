@@ -568,7 +568,7 @@ body.modal-open {
   height: 25px !important;
 }
 
-/* MAIN PAGE -BUTTON ICONS */
+/* MAIN PAGE - BUTTON ICONS - MOBILE */
 
 .button-container {
   padding: 0 10px !important;
@@ -582,10 +582,39 @@ body.modal-open {
 
 /* CONTACT PAGE - MOBILE */
 .elementor-section {
-  width: 80% !important;
+  width: 90% !important;
 }
 
+/* ABOUT PAGE - MOBILE */
 
+.about-me {
+  margin: 5px auto; /* Centers the section horizontally */
+  padding: 5px;
+}
+
+.company-logo {
+  height: 100px; /* Adjust size as needed */
+}
+
+.job-location, .job-period {
+  font-size: 14px;
+}
+
+.job-title {
+  font-size: 14px;
+}
+
+.about-me ul li, .about-me p{
+  font-size: 10px !important;
+}
+
+.skills-grid {
+  gap: 5px;
+}
+
+.skill img {
+  height: 60px;
+}
 
 }
 
@@ -749,7 +778,7 @@ body.modal-open {
 .elementor-section {
   display: flex;
   box-sizing: border-box;
-  width: 50%;
+  width: 100%; /* Adjust to 100% for full width of the section */
   background: transparent;
   justify-content: center;
   align-items: center;
@@ -761,6 +790,13 @@ body.modal-open {
 
 .elementor-container {
   width: 100%;
+}
+
+.elementor-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensures full height */
 }
 
 .elementor-field-group {
@@ -786,11 +822,13 @@ body.modal-open {
 }
 
 .elementor-button {
-  display: block;
+  min-width: auto !important; /* Removes any preset min-width */
+  width: fit-content !important; /* Adjust width to fit the content */
+  max-width: none !important; /* Removes Elementor's max-width restriction */
+  display: inline-flex !important; /* Ensures the button doesn't stretch */
   background-color: #c32aff;
   color: white;
   padding: 10px;
-  width: 100%;
   border-radius: 4px;
   cursor: pointer;
   align-items: center;
@@ -807,8 +845,17 @@ body.modal-open {
   width: 100%; /* Ensures the wrapper fills its container */
   display: flex;
   flex-direction: column; /* Stack fields and button properly */
-  align-items: stretch; /* Ensure full width usage */
+  align-items: center; /* Centers the button horizontally */
 }
+
+form .elementor-button, 
+form .button, 
+form button {
+  width: 100% !important;
+  max-width: none !important;
+  display: block !important;
+}
+
 
 
 @keyframes fadeInUp {
