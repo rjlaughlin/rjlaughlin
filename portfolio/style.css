@@ -569,6 +569,11 @@ body.modal-open {
 }
 
 /* MAIN PAGE -BUTTON ICONS */
+
+.button-container {
+  padding: 0 10px;
+}
+
 .button-icon {
   width: clamp(80px,9.375vw,180px);
   margin-bottom: clamp(2px,1.04vw,20px);
