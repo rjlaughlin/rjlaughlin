@@ -588,28 +588,58 @@ body.modal-open {
 /* ABOUT PAGE - MOBILE */
 
 .about-me {
-  margin: 5px auto; /* Centers the section horizontally */
-  padding: 5px;
+  margin: 5px auto !important; /* Centers the section horizontally */
+  padding: 5px !important;
 }
 
 .about-me h1 {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 .about-me h2 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .company-logo {
-  height: 65px; /* Adjust size as needed */
+  height: 40px !important; /* Adjust size as needed */
+}
+
+.logo-long {
+  max-width: 160px !important; /* Adjust size as needed */
+  height: auto !important;
+  max-height: auto !important;
+}
+
+.job {
+  margin-bottom: 5px !important;
+  padding: 5px !important;
+   /* Adds a separator between jobs */
+}
+
+.job-header {
+  flex-direction: row; /* Keep logo and location on the same row */
+    justify-content: space-between; /* Space between logo and location */
+}
+
+.job-details {
+  flex-direction: row; /* Keep logo and location on the same row */
+  justify-content: space-between; /* Space between logo and location */
 }
 
 .job-location, .job-period {
-  font-size: 13px;
+  font-size: 12px !important;
 }
 
 .job-title {
-  font-size: 13px;
+  font-size: 12px !important;
+}
+
+.about-me h3, .about-me span{
+  margin: 0 !important;
+}
+
+.about-me span{
+  text-align: right !important;
 }
 
 .about-me ul li, .about-me p{
@@ -617,11 +647,15 @@ body.modal-open {
 }
 
 .skills-grid {
-  gap: 3px;
+  gap: 2px !important;
 }
 
 .skill img {
-  height: 40px;
+  height: 35px !important;
+}
+
+.about-line {
+  margin: 10px 0 !important;
 }
 
 }
@@ -918,7 +952,7 @@ form button {
 }
 
 .about-me ul li, .about-me p{
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 .skills-grid {
