@@ -592,28 +592,36 @@ body.modal-open {
   padding: 5px;
 }
 
+.about-me h1 {
+  font-size: 15px;
+}
+
+.about-me h2 {
+  font-size: 14px;
+}
+
 .company-logo {
-  height: 100px; /* Adjust size as needed */
+  height: 65px; /* Adjust size as needed */
 }
 
 .job-location, .job-period {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .job-title {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .about-me ul li, .about-me p{
-  font-size: 10px !important;
+  font-size: 9px !important;
 }
 
 .skills-grid {
-  gap: 5px;
+  gap: 3px;
 }
 
 .skill img {
-  height: 60px;
+  height: 40px;
 }
 
 }
