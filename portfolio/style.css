@@ -672,6 +672,7 @@ body.modal-open {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0px auto;
 
 }
 @media (min-width: 777px) {
