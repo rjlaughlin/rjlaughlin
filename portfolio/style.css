@@ -663,6 +663,7 @@ body.modal-open {
 /* -------------------- MODAL ------------------ */
 
 /* width of modal: different following the device: small (100%), medium(50%), large(30%); */
+
 .portfolio-modal .modal-dialog {
   /* left: 0%; Moves it to the middle horizontally */
   /* margin: 3rem; */
@@ -678,19 +679,23 @@ body.modal-open {
 @media (min-width: 777px) {
   .portfolio-modal .modal-dialog {
     min-width: 70vw;
-    max-height: 95vh;
+    max-height: 97.5vh;
     align-items: flex-start !important;
-    overflow: auto !important;
     overflow-y: auto !important;
+    margin: auto auto;
+    overflow-x: hidden !important;
+    top: 1.25%; /* Adjust this value for more or less offset */
+    /* transform: translate(-50%, -50%); Centers it properly */
   }
 }
 @media (min-width: 1800px) {
   .portfolio-modal .modal-dialog {
     max-width: 40vw;
-    max-height: 95vh;
+    max-height: 97.5vh;
     align-items: flex-start !important;
-    overflow: auto !important;
     overflow-y: auto !important;
+    margin: auto auto;
+    overflow-x: hidden !important;
   }
 }
 
@@ -819,6 +824,10 @@ body.modal-open {
   background-color: #212529;
 }
 
+.bootcamp .close-modal .lr,
+.bootcamp .close-modal .lr .rl {
+  background-color: white !important;
+}
 
 .elementor-section {
   display: flex;

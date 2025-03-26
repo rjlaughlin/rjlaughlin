@@ -1,16 +1,19 @@
-$(document).ready(function() {
+$(document).ready(function () {
   
-  $("#portfolio-button-container button").on("click", function() {
+  $("#portfolio-button-container button").on("click", function () {
     console.log("Button clicked:", $(this).text()); // Debugging step 1
   });
-});
 
-$(document).on("click", ".close-modal", function () {
-  $(".portfolio-modal").modal("hide");
-});
+  // Close any open modals before opening a new one
+  $(".portfolio-modal").on("show.bs.modal", function () {
+    $(".portfolio-modal").not(this).modal("hide");
+  });
 
+  // Maintain functionality for closing modals via the close button
+  $(document).on("click", ".close-modal", function () {
+    $(".portfolio-modal").modal("hide");
+  });
 
-$(document).ready(function () {
   function isMobile() {
     return window.innerWidth <= 768; // Adjust this value for your breakpoint
   }
@@ -27,18 +30,15 @@ $(document).ready(function () {
       $(".close-modal").show();
     }
   });
-});
 
-// function for buttons
-
-$(function () {
+  // Portfolio filtering functionality
   var all_portfolio_items = $("#portfolio-items .column");
 
   $("#portfolio-button-container button").click(function () {
     var category = $(this).data("portfolio-section");
     console.log("Show " + category);
 
-    // Remove 'active' class from ALL buttons first
+    // Remove 'active' class from all buttons
     $("#portfolio-button-container button").removeClass("active");
     console.log("Removed active from all buttons"); // Debugging
 
@@ -55,9 +55,6 @@ $(function () {
   });
 });
 
-
-
-
 !function(a) {
   "use strict";
   
@@ -69,7 +66,7 @@ $(function () {
               return a("html, body").animate({
                   scrollTop: o.offset().top - 54
               }, 1e3, "easeInOutExpo"),
-              !1
+              !1;
       }
   });
 
@@ -105,6 +102,6 @@ $(function () {
   // Enable scrolling inside modal
   a(".portfolio-modal .modal-content").on("touchmove", function(e) {
     e.stopPropagation(); // Keeps scrolling inside the modal
-}).css("overflow-y", "auto"); // Ensure the modal can scroll
+  }).css("overflow-y", "auto"); // Ensure the modal can scroll
 
 }(jQuery);
