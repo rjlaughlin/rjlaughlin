@@ -662,6 +662,32 @@ body.modal-open {
 
 }
 
+@media (max-width: 1299px) {
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 0px !important;
+  right: 10px !important;
+  width: 50px !important;  /* Increase clickable area */
+  height: 50px !important; /* Increase clickable area */
+  cursor: pointer;
+  background-color: transparent !important;
+  z-index: 9999; /* Ensure it's above everything */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-modal .close-modal .lr {
+  /* Safari and Chrome */
+  height: 25px !important;
+  margin-left: 0px;
+}
+
+.portfolio-modal .close-modal .lr .rl {
+  /* Safari and Chrome */
+  height: 25px !important;
+}
+}
 /* -------------------- MODAL ------------------ */
 
 /* width of modal: different following the device: small (100%), medium(50%), large(30%); */
@@ -680,7 +706,7 @@ body.modal-open {
 }
 @media (min-width: 777px) {
   .portfolio-modal .modal-dialog {
-    width: 85vw;
+    min-width: 85vw;
     max-height: 97.5vh;
     align-items: flex-start !important;
     overflow-y: auto !important;
