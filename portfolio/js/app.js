@@ -15,7 +15,7 @@ $(document).ready(function () {
   });
 
   function isMobile() {
-    return window.innerWidth <= 768; // Adjust this value for your breakpoint
+    return window.innerWidth <= 1299; // Adjust this value for your breakpoint
   }
 
   $(".portfolio-modal").on("hidden.bs.modal", function () {
