@@ -188,7 +188,6 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 0.65vw;
-  font-size: clamp(12px,0.9375vw,18px); /* Adjust font size as needed */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.2s ease; /* Smooth transition for background color */
 }
@@ -579,6 +578,9 @@ body.modal-open {
   margin-bottom: clamp(2px,1.04vw,20px) !important;
 }
 
+.main-link {
+  font-size: 12px; /* Adjust font size as needed */
+}
 
 /* CONTACT PAGE - MOBILE */
 .elementor-section {
@@ -687,16 +689,50 @@ body.modal-open {
     top: 1.25%; /* Adjust this value for more or less offset */
     /* transform: translate(-50%, -50%); Centers it properly */
   }
+
+
+  .main-link {
+    border-radius: 5px;
+    font-size: 15px !important; /* Adjust font size as needed */
+  }
+
+  .portfolio-modal .modal-content {
+    -webkit-overflow-scrolling: touch; /* Improves touch scrolling on iOS */
+  }
+
+  .modal-body {
+    width: 105%;
+    margin: auto auto;
+  }
+
+  .skill img {
+    height: 65px;
+  }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1300px) {
   .portfolio-modal .modal-dialog {
-    max-width: 40vw;
+    min-width: 70vw;
     max-height: 97.5vh;
     align-items: flex-start !important;
     overflow-y: auto !important;
     margin: auto auto;
     overflow-x: hidden !important;
   }
+
+  .modal-body {
+    width: 105%;
+    margin: auto auto;
+    left: -1.25%;
+  }
+
+  .skill img {
+    height: 125px;
+  }
+
+  .main-link {
+    font-size: 18px !important;
+  }
+
 }
 
 .portfolio-modal .modal-content {
@@ -982,9 +1018,4 @@ form button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.skill img {
-  width: auto; /* Adjust the size of icons */
-  height: 125px;
 }
