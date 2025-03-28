@@ -52,7 +52,18 @@ I have modified the content and styling to reflect my own work and portfolio.-->
       
       <div id="portfolio-items" class="row">
 
-
+        <div class="col-md-3 col-sm-6 portfolio-item show column data viz dashboard">
+          <a class="portfolio-link" data-toggle="modal" href="#MRS"  style = "background-color: #000000">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p class="explanation_portfolio"><strong>Movie Recommendation System</strong></p>
+                <hr class = "hover-line">
+                <p class="explanation_portfolio">Created a movie recommendation system using machine learning techniques and models.<br></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/mrs.png" style = "object-fit: contain;" alt="">
+          </a>
+        </div>
 
         <div class="col-md-3 col-sm-6 portfolio-item show column data viz dashboard">
           <a class="portfolio-link" data-toggle="modal" href="#bitcoin"  style = "background-color: #000000">
@@ -158,7 +169,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
           <a class="portfolio-link" data-toggle="modal" href="#storms" style="background-color: white;">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <p class="explanation_portfolio">Natural Disasters Data Analysis</p>
+                <p class="explanation_portfolio"><strong>Natural Disasters Data Analysis</strong></p>
                 <hr>
                 <p class="explanation_portfolio">Analysis on the frequency and financial impact of natural disasters</p>
               </div>
@@ -172,7 +183,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
           <a class="portfolio-link" data-toggle="modal" href="#concussions" style="background-color: white;">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <p>The Comprehensive Analysis of Concussions</p>
+                <p><strong>The Comprehensive Analysis of Concussions</strong></p>
                 <hr>
                 <p class="explanation_portfolio">Thesis on the impact of concussions in professional football.</p>
               </div>
@@ -199,7 +210,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
           <a class="portfolio-link" data-toggle="modal" href="#Other_Design_Projects" style="background-color: white;">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <p class="explanation_portfolio">Other Design Projects</p>
+                <p class="explanation_portfolio"><strong>Other Design Projects</strong></p>
                 <hr>
                 <p class="explanation_portfolio">Showcases other mechanical design projects from my career.</p>
               </div>
@@ -208,7 +219,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 portfolio-item show column improvement">
+        <!-- <div class="col-md-3 col-sm-6 portfolio-item show column improvement">
           <a class="portfolio-link" data-toggle="modal" href="#macros" style="background-color: white;">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -219,13 +230,13 @@ I have modified the content and styling to reflect my own work and portfolio.-->
             </div>
             <img class="img-fluid" src="img/JG_Macros.png" style = "object-fit: contain; transform: scale(0.70);" alt="">
           </a>
-        </div>
+        </div> -->
 
         <div class="col-md-3 col-sm-6 portfolio-item show column improvement">
           <a class="portfolio-link" data-toggle="modal" href="#bootcamp" style="background-color: white;">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <p class="explanation_portfolio">Bootcamp</p>
+                <p class="explanation_portfolio"><strong>Bootcamp</strong></p>
                 <hr>
                 <p class="explanation_portfolio">Projects from my bootcamp</p>
               </div>
@@ -263,6 +274,67 @@ I have modified the content and styling to reflect my own work and portfolio.-->
   </footer>
 
 <!---------------------------- MODAL SECTION --------------------------------------------->
+
+<!------------------------- Movie Recommendation System ---------------------------------------1--->
+<center>
+  <div class="portfolio-modal modal fade" id="MRS" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="header-container">
+                  <img class="logo" src="img/Arizona_State_University_Logo.png">
+                  <div class="key-skills">
+                    <strong>Key Skills: Spark | Flask | Machine Learning </strong>
+                  </div>
+                </div>
+                <hr class="modal-line">
+                <h4 class="modal-header" style="text-align: center">Movie Recommendation System</h4>
+                <div class="modal-text">
+                  <p class="modal-text" style="max-width: 100%;">For this bootcamp project, my team developed Movie Recommendation Systems using both Collaborative Filtering and Content-Based Filtering techniques. Collaborative Filtering uses user-movie rating data to suggest movies based on similar user preferences, while Content-Based Filtering recommends movies based on their content similarities using metadata. The system provides personalized recommendations based on user preferences and ratings using machine learning techniques such as TFIDVectorizer and cosine similarity.</p>
+                  <img src="img/tmdb.png" style="margin:5px !important;width: 100%;">
+                  <p class="modal-text" style="margin-top:1.04vw; margin-bottom:0.78125vw;"><strong>Key technologies used in the project include:</strong></p>
+                  <ul style="margin-top:0; margin-bottom:0.78125vw;">
+                    <li>Python, Pandas, NumPy for data manipulation and transformation.</li>
+                    <li>Flask for developing a web interface.</li>
+                    <li>TFIDVectorizer and cosine similarity for Content-Based Filtering.</li>
+                    <li>Clustering techniques to improve recommendations.</li>
+                  </ul>
+                  <p style="margin-top:0; margin-bottom:0.78125vw;"><strong>The project featured a large-scale data transformation step where I:</strong></p>
+                  <ul style="margin-top:0; margin-bottom:0.78125vw;">
+                    <li>Downloaded over 1 million movie IDs from the TMDB website in a JSON format.</li>
+                    <li>Used Spark DataFrame and SQL queries to filter movies with a popularity rating greater than 5, reducing the dataset to about 7,600 movies.</li>
+                    <li>Developed a Flask API that allows users to select 5 movies and receive personalized recommendations based on those selections.</li>
+                  </ul>
+                  <img src="img/movie_recommendation_system.gif" style="width: 100%;">
+                <div style="text-align: center; margin-top: 0.52vw;">
+                  <p class="modal-text textbox">Movie recommendation system demo in action</p>
+                </div>
+                <hr style="margin:1px" width="80%">
+                <span class="modal-text">The source code of the project is available on <a href="https://github.com/AndrewJ79/Movie_Recommendation_System">GitHub</a>.</span>
+                <div style="margin-top: 0.26vw;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/AndrewJ79/Movie_Recommendation_System">GitHub</a>
+                </div>
+                <span class ="modal-text"> To run the Movie Recommendation System, download the necessary files from the GitHub repository. Ensure that all required dependencies are installed by following the instructions provided in the repository's README file. Once the setup is complete, run app2.py to launch the system. You can then interact with the system by selecting 5 movies, and the model will provide recommendations based on the selections.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+
+
+
 <!------------------------- BITCOIN ANALYSIS ---------------------------------------1--->
 <center>
   <div class="portfolio-modal modal fade" id="bitcoin" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
@@ -434,6 +506,35 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                   <img src="https://rjlaughlin.com/portfolio/img/S20-OPRTR.png" width="100%">
                   <img src="https://rjlaughlin.com/portfolio/img/JG.OPRTR.S22U.png" width="100%">
                   <img src="https://rjlaughlin.com/portfolio/img/JG.ADVNTR.GLXY.S24_1-FDE.jpg" width="100%">
+                </div>
+                
+                <hr style = "margin-top:1px;margin-bottom:20px" width = "100%">
+                  <div class = "key-skills" style="display: block !important; margin-left: auto !important;text-align: right !important;">
+                    <strong>Key Skills: Process Automation | VBA | Data Management</strong>
+                  </div>
+                <hr class = "modal-line">
+                <h4 class = "modal-header">Juggernaut Macros</h4>
+                <div class = "modal-text">
+                <p style="color: #231f20; text-align: left; max-width: 800px; margin: auto;">
+                  In addition to my design projects, I also worked on various automation macros during my time at Juggernaut. This macro-based spreadsheet automates key processes in managing Creo Parametric files and inventory data imports, improving efficiency and accuracy. Below is a list of included macros and their functions.
+                </p>
+              </div>
+                <h5 class = "modal-header subheader" style="margin-top:clamp(5px,1.04vw,20px)">Included Macros</h5>
+                <div class = "modal-text">
+                <ul style="text-align: left; max-width: 800px; margin: auto;">
+                  <li><strong>Copy Files:</strong> Copies the latest version of Creo Parametric files and stores them in a designated folder.</li>
+                  <li><strong>Change Creo Version:</strong> Updates the index number of a Creo Parametric file to a user-specified version.</li>
+                  <li><strong>Audit Release Directory:</strong> Moves files from the Release directory to the Archive directory based on file name and type.</li>
+                </ul>
+              </div>
+                <!-- <div style="text-align: center; margin-top: 20px;">
+                  <img src="img/juggernaut_macros.png" width="100%">
+                </div>
+                <p style="background-color:gray;padding:5px;color:white;margin-top: 5px; text-align: center;">Screenshot of the macro-based spreadsheet</p> -->
+                <hr style = "margin:1px" width = "80%">
+                <span class = "modal-text">The source code of the project is available on <a href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>.</span>
+                <div style="margin-top: 10px; padding: 5px;">
+                  <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/rjlaughlin/JG-Improve">GitHub</a>
                 </div>
               </div>
             </div>
