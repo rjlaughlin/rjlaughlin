@@ -14,15 +14,44 @@
 <body>
   
 <!-- Banner -->
-<div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
-  <div style="font-size: clamp(12px,1.04vw,20px); font-weight: bold;">R. Laughlin</div>
-  <div>
+<div class="banner" style="background-color: #121212; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
+  <div style="font-size: 20px; font-weight: bold;"><a href="/" class="nav-link">R. Laughlin</a></div>
+  <div class="desktop-nav">
     <a href="/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">HOME</a>
     <a href="/about/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">ABOUT</a>
     <a href="/portfolio/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">PORTFOLIO</a>
     <a href="/contact/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">CONTACT</a>
   </div>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="mobile-nav">
+    <a href="/">HOME</a>
+    <a href="/about/">ABOUT</a>
+    <a href="/portfolio/">PORTFOLIO</a>
+    <a href="/contact/">CONTACT</a>
+  </div>
 </div>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const mobileNav = document.querySelector('.mobile-nav');
+  
+  hamburger.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileNav.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.hamburger') && !event.target.closest('.mobile-nav')) {
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('active');
+    }
+  });
+</script>
 
 <!-- Phoenix Skyline Banner -->
 <div class="skyline" style="position: relative; height: clamp(150px,15.625vw,300px); background: url('https://media.licdn.com/dms/image/v2/D5616AQGctnglPRHcNA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1684360544508?e=1744243200&v=beta&t=8an4iY3JgTXYdyD-R7DXAFCt8q_67dgtw_F7QyljLYY') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
@@ -31,12 +60,12 @@
 
 <!-- Introduction Section -->
 <div style="text-align: center;">
-  <h2 style="font-size: clamp(28px, 1.875vw, 36px); font-weight: bold; font-family: 'Segoe UI', sans-serif; margin-bottom: 0.26vw; text-transform: uppercase;">Riley Laughlin</h2>
-  <div style="font-size: clamp(22px, 1.46vw, 28px); font-weight: none; font-family: 'Segoe UI', sans-serif;margin-top: 0;">From Engineering to Analytics</div>
+  <h1 style="font-size: 40px; font-weight: bold; font-family: 'Segoe UI', sans-serif; margin-bottom: 0.26vw; text-transform: uppercase;">Riley Laughlin</h1>
+  <div style="font-size: 42px; font-family: 'Segoe UI', sans-serif;margin-top: 0; margin-bottom: 65px;">From Engineering to Analytics</div>
 
 <!-- Reset to One-Column Layout -->
 <div class="single-column">
-  <div class="button-row">
+  <div class="home button-row">
   <div class="button-container">
     <img src="portfolio/img/person.png" alt="Portfolio Icon" class="button-icon">
     <a href="/about/" class="main-link" id="portfolio-link">ABOUT ME</a>
@@ -56,7 +85,7 @@
   </div>
 </div>
 
-<hr style="width: 75%; height: 3px; background-color: white; border: none; margin: 30px auto">
+<hr style="width: 75%; height: 3px; background-color: rgb(255 255 255 / 25%); border: none; margin: 75px auto">
 
 <!-- Two-Column Section -->
 <div class="two-column">
@@ -71,7 +100,7 @@
   <div class="column-box">
     <p id="output-text">
       Hi. My name is Riley Laughlin.<br><br>
-      For the past 10 years, I have been a mechanical design engineer.<br><br>
+      For the past 10 years, I have been a mechanical design engineer.
       After my latest job, I decided to switch paths and pursue a role in data analysis and business intelligence.<br><br>
       This site contains my portfolio of data and design projects I have worked on throughout my career, including my previous roles, my MBA program, and my data analytics bootcamp.<br><br>
       I am actively seeking a new opportunity as a Data Analyst or Business Intelligence Analyst. If you believe my skills and experience align with your needs, I’d love to connect!

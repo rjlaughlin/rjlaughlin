@@ -13,15 +13,44 @@
       <body>
         
       <!-- Banner -->
-      <div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
-        <div style="font-size: clamp(12px,1.04vw,20px); font-weight: bold;">R. Laughlin</div>
-        <div>
-            <a href="/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">HOME</a>
-            <a href="/about/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">ABOUT</a>
-            <a href="/portfolio/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">PORTFOLIO</a>
-            <a href="/contact/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">CONTACT</a>
+      <div class="banner" style="background-color: #121212; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-size: 20px; font-weight: bold;"><a href="/" class="nav-link">R. Laughlin</a></div>
+        <div class="desktop-nav">
+          <a href="/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">HOME</a>
+          <a href="/about/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">ABOUT</a>
+          <a href="/portfolio/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">PORTFOLIO</a>
+          <a href="/contact/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">CONTACT</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-nav">
+          <a href="/">HOME</a>
+          <a href="/about/">ABOUT</a>
+          <a href="/portfolio/">PORTFOLIO</a>
+          <a href="/contact/">CONTACT</a>
         </div>
       </div>
+      
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+        
+        hamburger.addEventListener('click', function() {
+          this.classList.toggle('active');
+          mobileNav.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.hamburger') && !event.target.closest('.mobile-nav')) {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+          }
+        });
+      </script>
       
       <!-- Phoenix Skyline Banner -->
       <div class="skyline" style="position: relative; height: clamp(150px,15.625vw,300px); background: url('https://media.licdn.com/dms/image/v2/D5616AQGctnglPRHcNA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1684360544508?e=1744243200&v=beta&t=8an4iY3JgTXYdyD-R7DXAFCt8q_67dgtw_F7QyljLYY') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
@@ -31,8 +60,8 @@
 
 <section class="elementor-section animated fadeInUp">
     <div class="elementor-container">
-        <h1 style = "text-align:center;">Contact</h1>
-        <h3 style = "text-align:center;">Get in touch, and I'll reply as soon as possible!</h3>
+        <h1 style = "text-align:center; font-size: 40px; margin: 35px 0 20px 0;">Contact</h1>
+        <h3 style = "text-align:center; font-size: 20px;">Get in touch, and I'll reply as soon as possible!</h3>
         <div class="elementor-column elementor-col-100 animated-fast fadeInUp">
             <div class="elementor-widget-wrap">
                 <div class="elementor-form">

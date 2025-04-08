@@ -18,33 +18,62 @@ I have modified the content and styling to reflect my own work and portfolio.-->
 <body>
   
 <!-- Banner -->
-<div class="banner" style="background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
-  <div style="font-size: clamp(12px,1.04vw,20px); font-weight: bold;">R. Laughlin</div>
-  <div>
+<div class="banner" style="background-color: #121212; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
+  <div style="font-size: 20px; font-weight: bold;"><a href="/" class="nav-link">R. Laughlin</a></div>
+  <div class="desktop-nav">
     <a href="/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">HOME</a>
     <a href="/about/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">ABOUT</a>
     <a href="/portfolio/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">PORTFOLIO</a>
     <a href="/contact/" class="nav-link" style = "font-size: clamp(9px,0.83vw,16px)">CONTACT</a>
   </div>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="mobile-nav">
+    <a href="/">HOME</a>
+    <a href="/about/">ABOUT</a>
+    <a href="/portfolio/">PORTFOLIO</a>
+    <a href="/contact/">CONTACT</a>
+  </div>
 </div>
 
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const mobileNav = document.querySelector('.mobile-nav');
+  
+  hamburger.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileNav.classList.toggle('active');
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('.hamburger') && !event.target.closest('.mobile-nav')) {
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('active');
+    }
+  });
+</script>
+
 <!-- Phoenix Skyline Banner -->
-<div style="position: relative; width: 100%; height: clamp(150px,15.625vw,300px); background: url('https://t4.ftcdn.net/jpg/00/94/75/29/360_F_94752988_MYOfnIZ0Ir13eLZsGRKe4enmf14MVFli.jpg') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
-  <h1 style="text-align: center; color: white; font-size: clamp(24px,1.875vw,36px); font-weight: bold; background: rgba(0, 0, 0, 0.5); padding: 10px 20px;">Welcome to My Portfolio</h1>
+<div class="skyline" style="position: relative; height: clamp(150px,15.625vw,300px); background: url('https://media.licdn.com/dms/image/v2/D5616AQGctnglPRHcNA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1684360544508?e=1744243200&v=beta&t=8an4iY3JgTXYdyD-R7DXAFCt8q_67dgtw_F7QyljLYY') no-repeat center center/cover; display: flex; align-items: center; justify-content: center;">
 </div>
   
-  <section style = "background-color: black;" id="portfolio">
+  <section style ="background-color: black;" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h3 class="section-subheading text-muted" style = "color: white !important;margin-top: 15px; font-size: clamp()">Here are some of my projects</h3>
+          <h1 style="text-align: center; color: white; font-size: 40px; font-weight: bold; background: rgba(0, 0, 0, 0.5); padding: 10px 20px; margin: 35px 0 10px 0;">My Portfolio</h1>
+          <h3 class="section-subheading text-muted" style = "color: white !important; margin: 0 0 35px 0; font-size: 30px;">Here are some of my projects:</h3>
           <div id="portfolio-button-container">
-            <button class="btn btn-secondary active" data-portfolio-section="all">Show all</button>
+            <button class="btn btn-secondary active" data-portfolio-section="all">All</button>
             <button class="btn btn-secondary" data-portfolio-section="data">Data</button>
-            <button class="btn btn-secondary" data-portfolio-section="viz">Visualization</button>
             <button class="btn btn-secondary" data-portfolio-section="dashboard">Dashboard</button>
             <button class="btn btn-secondary" data-portfolio-section="product">Product Design</button>
             <button class="btn btn-secondary" data-portfolio-section="improvement">Process Improvement</button>
+            <button class="btn btn-secondary" data-portfolio-section="viz">Visualization</button>
           </div>
         </div>
       </div>
@@ -301,14 +330,14 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                   <p class="modal-text" style="max-width: 100%;">For this bootcamp project, my team developed Movie Recommendation Systems using both Collaborative Filtering and Content-Based Filtering techniques. Collaborative Filtering uses user-movie rating data to suggest movies based on similar user preferences, while Content-Based Filtering recommends movies based on genres, overviews, titles, etc.</p>
                   <img src="img/tmdb.png" style="margin:5px !important;width: 100%;">
                   <p class="modal-text" style="margin-top:1.04vw; margin-bottom:0.78125vw;"><strong>Key technologies used in the project include:</strong></p>
-                  <ul style="margin-top:0; margin-bottom:0.78125vw;">
+                  <ul style="margin-top:0; margin-bottom:0.78125vw; list-style-position: inside;">
                     <li>Python, Pandas, NumPy for data manipulation and transformation.</li>
                     <li>Flask for developing a web interface.</li>
                     <li>TFIDVectorizer and cosine similarity for Content-Based Filtering.</li>
                     <li>Clustering techniques to improve recommendations.</li>
                   </ul>
                   <p style="margin-top:0; margin-bottom:0.78125vw;"><strong>The project featured a large-scale data transformation step where I:</strong></p>
-                  <ul style="margin-top:0; margin-bottom:0.78125vw;">
+                  <ul style="margin-top:0; margin-bottom:0.78125vw; list-style-position: inside;">
                     <li>Downloaded over 1 million movie IDs from the TMDB website in a JSON format.</li>
                     <li>Used Spark DataFrame and SQL queries to filter movies with a popularity rating greater than 5, reducing the dataset to about 7,600 movies.</li>
                     <li>Developed a Flask API that allows users to select 5 movies and receive personalized recommendations based on those selections.</li>
@@ -360,7 +389,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 <div class = "modal-text">
                 <p class = "modal-text" style="max-width: 100%;">In my data analytics bootcamp, I was part of a project that analyzed Bitcoin's historical price movements to provide insights into market trends and volatility. Through visualizations, it aims to help readers understand Bitcoin's price behavior over time.</p>
                 <p class = "modal-text" style = "margin-top:0; margin-bottom:0.78125vw;">To achieve this, we used several technologies, including:</p>
-                <ul style = "margin-top:0; margin-bottom:0.78125vw;">
+                <ul style = "margin-top:0; margin-bottom:0.78125vw; list-style-position: inside;">
                   <li>Python, Jupyter Notebook, and Pandas for data acquisition and manipulation.</li>
                   <li>JavaScript, HTML, CSS, and D3 for interactive visualizations.</li>
                   <li>Plotly and Matplotlib for advanced charting techniques.</li>
@@ -368,7 +397,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 </ul>
                 <p style = "margin-top:0; margin-bottom:0.78125vw;">Data sources include CoinMarketCap for historical Bitcoin prices and Fidelity for ETF data.</p>
                 <p style = "margin-top:0; margin-bottom:0.78125vw;">The dashboard features several key visualizations:</p>
-                <ul style = "text-align: center; margin-top:0; margin-bottom:0.78125vw;">
+                <ul style = "text-align: center; margin-top:0; margin-bottom:0.78125vw; list-style-position: inside;">
                   <li><strong>Bitcoin Price Over Time:</strong> Tracks Bitcoin’s price with adjustable time units (days, months, or years).</li>
                   <li><strong>Dollar Change vs. Percentage Change Heatmap:</strong> Displays Bitcoin’s volatility based on different timeframes.</li>
                   <li style = "margin-top:0; margin-bottom:0.78125vw;"><strong>Google Trends Bitcoin Search Interest:</strong> Visualizes Bitcoin-related search activity across U.S. states.</li>
@@ -425,7 +454,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 <div class = "modal-text">
                 <p style="max-width: 100%; margin-bottom:0.78125vw; text-align: center;">I led the design, build, and launch of the OPRTR case for the Samsung Galaxy Tab Active 5. This case is designed for operators requiring an adaptable mounting solution in various environments, including vehicle dashboards, chest molle mounts, and kneeboard mounts.</p>
                 <p style="margin-top:0; margin-bottom:0.78125vw; text-align: center;">Key highlights of the project include:</p>
-                <ul style="margin-top:0; margin-bottom:0.78125vw; text-align: center;">
+                <ul style="margin-top:0; margin-bottom:0.78125vw; text-align: center; list-style-position: inside;">
                   <li>Understanding and defining product requirements based on end-user needs.</li>
                   <li>Managing the project lifecycle from concept to launch, ensuring timely delivery.</li>
                   <li>Collaborating with stakeholders, including manufacturers, to refine design specifications.</li>
@@ -521,7 +550,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
               </div>
                 <h5 class = "modal-header subheader" style="margin-top:clamp(5px,1.04vw,20px)">Included Macros</h5>
                 <div class = "modal-text">
-                <ul style="text-align: left; max-width: 1000px; margin: auto;">
+                <ul style="text-align: left; max-width: 1000px; margin: auto; list-style-position: inside;">
                   <li><strong>Copy Files:</strong> Copies the latest version of Creo Parametric files and stores them in a designated folder.</li>
                   <li><strong>Change Creo Version:</strong> Updates the index number of a Creo Parametric file to a user-specified version.</li>
                   <li><strong>Audit Release Directory:</strong> Moves files from the Release directory to the Archive directory based on file name and type.</li>
@@ -574,7 +603,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 <p style="color: #231f20; text-align: center; max-width: 800px; margin: 10px;">
                   The automated process provided several key benefits:
                 </p>
-                <ul style="color: #231f20; text-align: center; max-width: 800px; margin: 0 auto; display: block;">
+                <ul style="color: #231f20; text-align: center; max-width: 800px; margin: 0 auto; display: block; list-style-position: inside;">
                   <li>Automated data entry into Fishbowl, reducing manual input errors.</li>
                   <li>Automated file transfer to the designated Release directory, ensuring consistency.</li>
                   <li>Expedited ECN auditing by fellow engineers, improving review and approval efficiency.</li>
@@ -740,7 +769,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 <hr>
                 <h5 class = "modal-header subheader" style = "margin-top:10px;text-decoration: underline;">Key Findings</h5>
                 <div class = "modal-text">
-                <ul style="text-align: left; max-width: 800px; margin-top: 5px; margin: auto;">
+                <ul style="text-align: left; max-width: 800px; margin-top: 5px; margin: auto; list-style-position: inside;">
                   <li><strong>Ride Distribution:</strong> Most trips began and ended in Manhattan, with end locations more dispersed, indicating diverse rider destinations.</li>
                   <li><strong>Peak Hours:</strong> 5 PM saw the highest ride volume, followed by 6 PM and 4 PM, suggesting post-work commute trends.</li>
                   <li><strong>High-Ridership Days:</strong> November 1st and December 17th recorded the most rides.</li>
@@ -842,7 +871,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 <section id="key-questions" style = "margin-bottom: clamp(5px,0.53vw,20px);">
                   <h5 class = "modal-header subheader" style="margin-top:clamp(5px,1.04vw,10px);">Key Questions</h5>
                   <div class = "modal-text">
-                  <ul style = "text-align: center;margin:0px">
+                  <ul style = "text-align: center;margin:0px; list-style-position: inside;">
                       <li>Do natural disasters increase over time?</li>
                       <li>Is there a relationship between disaster duration and economic impact?</li>
                       <li>Which areas are most affected by natural disasters?</li>
@@ -914,7 +943,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 <section id="key-questions" style = "margin-bottom: clamp(5px,1.04vw,20px);">
                   <h5 class = "modal-header subheader" style="margin-top:clamp(5px,1.04vw,20px)">Key Questions</h5>
                   <div class = "modal-text">
-                  <ul style = "text-align: center;margin:0px">
+                  <ul style = "text-align: center;margin:0px; list-style-position: inside;">
                     <li>How do concussions affect NFL players in the short and long term?</li>
                     <li>What rule changes have been implemented to mitigate head injuries?</li>
                     <li>How effective are modern helmets in reducing concussion risks?</li>
@@ -1056,7 +1085,7 @@ I have modified the content and styling to reflect my own work and portfolio.-->
               </div>
                 <h5 class = "modal-header subheader" style="margin-top:clamp(5px,1.04vw,20px)">Included Macros</h5>
                 <div class = "modal-text">
-                <ul style="text-align: left; max-width: 800px; margin: auto;">
+                <ul style="text-align: left; max-width: 800px; margin: auto; list-style-position: inside;">
                   <li><strong>Copy Files:</strong> Copies the latest version of Creo Parametric files and stores them in a designated folder.</li>
                   <li><strong>Change Creo Version:</strong> Updates the index number of a Creo Parametric file to a user-specified version.</li>
                   <li><strong>Audit Release Directory:</strong> Moves files from the Release directory to the Archive directory based on file name and type.</li>
@@ -1277,12 +1306,12 @@ I have modified the content and styling to reflect my own work and portfolio.-->
                 <div class="modal-text">
                   <p class="modal-text" style="max-width: 100%;">This project involves building an Extract, Transform, Load (ETL) pipeline to process crowdfunding data. Using Python tools such as pandas, dictionary methods, and regular expressions, the data is extracted, transformed, and loaded into a PostgreSQL database.</p>
                   <p class="modal-text" style="margin-top:0; margin-bottom:0;"><strong>Key Features:</strong></p>
-                  <ul style="margin-top:0; margin-bottom:0.78125vw;">
+                  <ul style="margin-top:0; margin-bottom:0.78125vw; list-style-position: inside;">
                     <li><strong>DataFrame Creation:</strong> Extracts and transforms category, subcategory, campaign, and contact data into structured DataFrames.</li>
                     <li><strong>Database Creation:</strong> Defines a PostgreSQL database schema, loads the transformed data into tables, and verifies accuracy through SQL queries.</li>
                   </ul>
                   <p style="margin-top:0; margin-bottom:0;"><strong>Technologies Used:</strong></p>
-                  <ul style="margin-top:0; margin-bottom:0.78125vw;">
+                  <ul style="margin-top:0; margin-bottom:0.78125vw; list-style-position: inside;">
                     <li>Python, Pandas, NumPy for data processing.</li>
                     <li>Regular Expressions and Dictionary Methods for data transformation.</li>
                     <li>PostgreSQL for database management.</li>
