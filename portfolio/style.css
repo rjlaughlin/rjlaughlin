@@ -561,8 +561,8 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 766px) { /* Targets screens smaller than 766px */
   #portfolio .portfolio-item {
-    flex: 0 0 40%; /* Controls width */
-    max-width: 33%;
+    flex: 0 0 50%; /* Controls width */
+    max-width: 50%;
     min-height: 100px !important; /* Set a reasonable height */
     display: flex;
     flex-direction: column;
@@ -829,6 +829,19 @@ body.modal-open {
   height: 25px !important;
 }
 }
+
+@media (max-width: 500px) { /* Targets screens smaller than 766px */
+  #portfolio .portfolio-item {
+    flex: 0 0 100%; /* Controls width */
+    max-width: 100%;
+    min-height: 100px !important; /* Set a reasonable height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /* -------------------- MODAL ------------------ */
 
 /* width of modal: different following the device: small (100%), medium(50%), large(30%); */
@@ -917,6 +930,10 @@ body.modal-open {
   font-size: 12px;
 }
 
+.portfolio-modal .modal-content li {
+  font-size: 12px;
+}
+
 .portfolio-modal .modal-content p.item-intro {
   font-size: 16px;
   font-style: italic;
@@ -971,6 +988,7 @@ body.modal-open {
     align-items: center !important; /* Centers vertically */
     width: 100%; /* Ensures full width */
     text-align: center !important; /* Ensures text is centered */
+    margin-bottom: 15px !important;
 }
 
   .modal-text {
@@ -1155,6 +1173,10 @@ form textarea {
 @media screen and (max-width: 768px) {
   .about-me {
     width: 90%;
+  }
+
+  .about-me br {
+    display: none;
   }
 }
 
