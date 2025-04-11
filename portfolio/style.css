@@ -281,8 +281,8 @@ body {
   background-color: #e56021;
   color: white;
   transition: 0.5s ease all;
-  border: 2px solid #1d1160;
-  box-shadow: inset 0 5em 0 0 #1d1160;
+  border: 2px solid #5F259F;
+  box-shadow: inset 0 5em 0 0 #5F259F;
   text-decoration: none;
 }
 
@@ -319,25 +319,25 @@ body {
 
 .btn-secondary {
   background-color: transparent;
-  border-color: #1d1260;
-  color: #1d1260;
+  border-color: #5F259F;
+  color: #5F259F;
   border-width: small;
   margin-left: 5px;
   margin:5px;
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #1d1260 !important;
+  background-color: #5F259F !important;
   border-color: #63727a !important;
   color: white;
 }
 
 .btn-secondary:active, .btn-secondary:focus {
-  background-color: #1d1260 !important;
+  background-color: #5F259F !important;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active {
-  background-color: #1d1260 !important;
+  background-color: #5F259F !important;
   border-color: #63727a !important;
   color: white;
 }
@@ -385,7 +385,7 @@ body {
 .footer-nav {
   background-color: #212121;
   color: #fff;
-  padding: 25px 0;
+  padding: 10px 0 25px 0;
   text-align: center;
 }
 
@@ -1106,7 +1106,7 @@ body.modal-open {
 
 .elementor-button {
   display: inline-flex !important; /* Ensures the button doesn't stretch */
-  background-color: #1d1160;
+  background-color: #5F259F;
   color: white;
   padding: 12px;
   border-radius: 4px;
